@@ -69,8 +69,8 @@ main {
 }
 
 .pag_wrap {
-    width: 90%;
-    max-width: 75em;
+    /* width: 90%;
+    max-width: 75em;*/
     margin: 0 auto;
 }
 
