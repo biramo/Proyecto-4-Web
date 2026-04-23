@@ -1,0 +1,62 @@
+<!ENTITY empresa "Llar Online">
+<!ENTITY eco "fabricación sostenible">
+
+<!ELEMENT llar_online (tienda?, productos)>
+<!ATTLIST llar_online
+    id_catalogo CDATA #REQUIRED
+    idioma CDATA #REQUIRED
+    version CDATA #REQUIRED
+>
+
+<!ELEMENT tienda (descripcion)>
+<!ATTLIST tienda
+    nombre CDATA #REQUIRED
+    moneda CDATA #REQUIRED
+    pais CDATA #REQUIRED
+>
+
+<!ELEMENT descripcion (#PCDATA)>
+
+<!ELEMENT productos (producto+)>
+<!ATTLIST productos
+    total CDATA #REQUIRED
+>
+
+<!ELEMENT producto (marca, nombre_comercial, referencia, descripcion_corta, caracteristicas, precio, disponibilidad, tiempo_entrega, imagenes)>
+<!ATTLIST producto
+    id ID #REQUIRED
+    tipo CDATA #REQUIRED
+    destacado (si|no) #REQUIRED
+>
+
+<!ELEMENT marca (#PCDATA)>
+<!ELEMENT nombre_comercial (#PCDATA)>
+<!ELEMENT referencia (#PCDATA)>
+<!ELEMENT descripcion_corta (#PCDATA)>
+
+<!ELEMENT caracteristicas (caracteristica+)>
+
+<!ELEMENT caracteristica (#PCDATA)>
+<!ATTLIST caracteristica
+    nombre (material|color|alto|largo|ancho|categoria) #REQUIRED
+    unidad CDATA #IMPLIED
+>
+
+<!ELEMENT precio (#PCDATA)>
+<!ATTLIST precio
+    moneda CDATA #REQUIRED
+>
+
+<!ELEMENT disponibilidad (#PCDATA)>
+
+<!ELEMENT tiempo_entrega (#PCDATA)>
+<!ATTLIST tiempo_entrega
+    unidad CDATA #REQUIRED
+>
+
+<!ELEMENT imagenes (imagen+)>
+
+<!ELEMENT imagen (#PCDATA)>
+<!ATTLIST imagen
+    principal (si|no) #REQUIRED
+>
