@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="llar_online_2.xsl"?>
+<!DOCTYPE llar_online SYSTEM "llar_online.dtd">
+
+<llar_online id_catalogo="CAT-2026-01" idioma="es" version="1.0">
+	<tienda nombre="&empresa;" moneda="EUR" pais="ES">
+		<descripcion>Catálogo de productos para el hogar con foco en el diseño, la calidad y la &eco;.
+	    </descripcion>
+	</tienda>
+	<productos>
+		<producto id="PR001" tipo="cama" destacado="si">
+			<marca>Nordic Home</marca>
+		    <nombre_comercial>Cama Brisa Roble</nombre_comercial>
+		    <referencia>DES-001</referencia>
+		    <descripcion_corta>Cama de diseño sencillo para dormitorio principal.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de roble</caracteristica>
+		        <caracteristica nombre="color">Natural</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">110</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">200</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">160</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">499.99</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/cama-brisa-roble-01.jpg</imagen>
+		        <imagen principal="no">img/productos/cama-brisa-roble-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR002" tipo="cabecero" destacado="no">
+			<marca>EcoDream</marca>
+		    <nombre_comercial>Cabecero Nube Beige</nombre_comercial>
+		    <referencia>DES-002</referencia>
+		    <descripcion_corta>Cabecero tapizado de estilo suave y moderno.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Tela y madera</caracteristica>
+		        <caracteristica nombre="color">Beige</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">8</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">165</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">189.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/cabecero-nube-beige-01.jpg</imagen>
+		        <imagen principal="no">img/productos/cabecero-nube-beige-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR003" tipo="mesita" destacado="no">
+			<marca>Casa Verde</marca>
+		    <nombre_comercial>Mesita Alba Blanca</nombre_comercial>
+		    <referencia>DES-003</referencia>
+		    <descripcion_corta>Mesita auxiliar ideal para dormitorio o zona de descanso.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera lacada</caracteristica>
+		        <caracteristica nombre="color">Blanco</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">55</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">45</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">79.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesita-alba-blanca-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesita-alba-blanca-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR004" tipo="tumbona" destacado="si">
+			<marca>Sun Garden</marca>
+		    <nombre_comercial>Tumbona Arena Relax</nombre_comercial>
+		    <referencia>EXT-001</referencia>
+		    <descripcion_corta>Tumbona cómoda para jardín, terraza o piscina.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Aluminio y textileno</caracteristica>
+		        <caracteristica nombre="color">Gris</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">35</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">190</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">68</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">159.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/tumbona-arena-relax-01.jpg</imagen>
+		        <imagen principal="no">img/productos/tumbona-arena-relax-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR005" tipo="silla_exterior" destacado="no">
+			<marca>Terra Natura</marca>
+		    <nombre_comercial>Silla Patio Verde</nombre_comercial>
+		    <referencia>EXT-002</referencia>
+		    <descripcion_corta>Silla ligera para espacios exteriores y zonas de descanso al aire libre.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Ratán sintético y acero</caracteristica>
+		        <caracteristica nombre="color">Verde oliva</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">84</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">58</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">56</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">69.50</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/silla-patio-verde-01.jpg</imagen>
+		        <imagen principal="no">img/productos/silla-patio-verde-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR006" tipo="mesa_exterior" destacado="no">
+			<marca>Outdoor Life</marca>
+		    <nombre_comercial>Mesa Terraza Coral</nombre_comercial>
+		    <referencia>EXT-003</referencia>
+		    <descripcion_corta>Mesa resistente para comidas y reuniones en exterior.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de acacia</caracteristica>
+		        <caracteristica nombre="color">Marron</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">75</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">150</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">90</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">229.00</precio>
+		    <disponibilidad>Pocas unidades</disponibilidad>
+		    <tiempo_entrega unidad="dias">8</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesa-terraza-coral-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesa-terraza-coral-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR007" tipo="mesa_comedor" destacado="si">
+			<marca>Nordic Home</marca>
+		    <nombre_comercial>Mesa Comedor Sena</nombre_comercial>
+		    <referencia>COM-001</referencia>
+		    <descripcion_corta>Mesa amplia para comedor de estilo contemporáneo.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y metal</caracteristica>
+		        <caracteristica nombre="color">Negro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">76</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">180</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">95</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">339.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesa-comedor-sena-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesa-comedor-sena-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR008" tipo="silla_comedor" destacado="no">
+			<marca>Linea Viva</marca>
+		    <nombre_comercial>Silla Comedor Duna</nombre_comercial>
+		    <referencia>COM-002</referencia>
+		    <descripcion_corta>Silla elegante para comedor con respaldo ergonómico.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y poliester</caracteristica>
+		        <caracteristica nombre="color">Azul petroleo</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">88</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">52</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">49</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">94.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/silla-comedor-duna-01.jpg</imagen>
+		        <imagen principal="no">img/productos/silla-comedor-duna-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR009" tipo="aparador" destacado="no">
+			<marca>Casa Verde</marca>
+		    <nombre_comercial>Aparador Nexo Roble</nombre_comercial>
+		    <referencia>COM-003</referencia>
+		    <descripcion_corta>Aparador funcional para guardar vajilla y objetos del comedor.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de roble</caracteristica>
+		        <caracteristica nombre="color">Roble claro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">82</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">160</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">42</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">279.99</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/aparador-nexo-roble-01.jpg</imagen>
+		        <imagen principal="no">img/productos/aparador-nexo-roble-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR010" tipo="armario" destacado="si">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Armario Boreal Blanco</nombre_comercial>
+		    <referencia>ALM-001</referencia>
+		    <descripcion_corta>Armario espacioso para mantener el hogar organizado.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera laminada</caracteristica>
+		        <caracteristica nombre="color">Blanco mate</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">200</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">60</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">389.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">9</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/armario-boreal-blanco-01.jpg</imagen>
+		        <imagen principal="no">img/productos/armario-boreal-blanco-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR011" tipo="comoda" destacado="no">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Comoda Aura Roble</nombre_comercial>
+		    <referencia>ALM-002</referencia>
+		    <descripcion_corta>Comoda funcional con varios cajones para dormitorio o recibidor.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de roble</caracteristica>
+		        <caracteristica nombre="color">Roble miel</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">90</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">45</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">100</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">219.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/comoda-aura-roble-01.jpg</imagen>
+		        <imagen principal="no">img/productos/comoda-aura-roble-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR012" tipo="estanteria" destacado="si">
+			<marca>Casa Verde</marca>
+		    <nombre_comercial>Estanteria Loto Negra</nombre_comercial>
+		    <referencia>ALM-003</referencia>
+		    <descripcion_corta>Estanteria decorativa para salon, despacho o dormitorio.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Metal y madera</caracteristica>
+		        <caracteristica nombre="color">Negro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">180</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">35</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">90</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">149.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/estanteria-loto-negra-01.jpg</imagen>
+		        <imagen principal="no">img/productos/estanteria-loto-negra-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR013" tipo="zapatero" destacado="no">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Zapatero Nilo Blanco</nombre_comercial>
+		    <referencia>ALM-004</referencia>
+		    <descripcion_corta>Zapatero compacto para mantener la entrada ordenada.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera laminada</caracteristica>
+		        <caracteristica nombre="color">Blanco</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">110</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">30</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">75</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">129.50</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/zapatero-nilo-blanco-01.jpg</imagen>
+		        <imagen principal="no">img/productos/zapatero-nilo-blanco-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR014" tipo="sofa" destacado="si">
+			<marca>EcoDream</marca>
+		    <nombre_comercial>Sofa Lino Gris</nombre_comercial>
+		    <referencia>DES-004</referencia>
+		    <descripcion_corta>Sofa de lineas suaves ideal para zonas de descanso y lectura.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Tela y madera</caracteristica>
+		        <caracteristica nombre="color">Gris claro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">85</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">95</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">210</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">599.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">10</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/sofa-lino-gris-01.jpg</imagen>
+		        <imagen principal="no">img/productos/sofa-lino-gris-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR015" tipo="butaca" destacado="no">
+			<marca>Linea Viva</marca>
+		    <nombre_comercial>Butaca Coral Mostaza</nombre_comercial>
+		    <referencia>DES-005</referencia>
+		    <descripcion_corta>Butaca comoda para rincones de lectura o salon.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Terciopelo y acero</caracteristica>
+		        <caracteristica nombre="color">Mostaza</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">98</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">78</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">74</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">249.99</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/butaca-coral-mostaza-01.jpg</imagen>
+		        <imagen principal="no">img/productos/butaca-coral-mostaza-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR016" tipo="hamaca" destacado="no">
+			<marca>Sun Garden</marca>
+		    <nombre_comercial>Hamaca Calma Arena</nombre_comercial>
+		    <referencia>EXT-004</referencia>
+		    <descripcion_corta>Hamaca ligera para balcon, jardin o terraza.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Algodon y cuerda</caracteristica>
+		        <caracteristica nombre="color">Arena</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">200</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">100</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">99.95</precio>
+		    <disponibilidad>Pocas unidades</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/hamaca-calma-arena-01.jpg</imagen>
+		        <imagen principal="no">img/productos/hamaca-calma-arena-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR017" tipo="banco_exterior" destacado="si">
+			<marca>Outdoor Life</marca>
+		    <nombre_comercial>Banco Jardin Sierra</nombre_comercial>
+		    <referencia>EXT-005</referencia>
+		    <descripcion_corta>Banco robusto para disfrutar de espacios al aire libre.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de teca</caracteristica>
+		        <caracteristica nombre="color">Teca natural</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">90</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">65</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">140</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">189.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/banco-jardin-sierra-01.jpg</imagen>
+		        <imagen principal="no">img/productos/banco-jardin-sierra-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR018" tipo="sombrilla" destacado="no">
+			<marca>Terra Natura</marca>
+		    <nombre_comercial>Sombrilla Bruma Taupe</nombre_comercial>
+		    <referencia>EXT-006</referencia>
+		    <descripcion_corta>Sombrilla elegante para proteger del sol en terraza o patio.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Aluminio y poliester</caracteristica>
+		        <caracteristica nombre="color">Taupe</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">245</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">300</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">300</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">139.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/sombrilla-bruma-taupe-01.jpg</imagen>
+		        <imagen principal="no">img/productos/sombrilla-bruma-taupe-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR019" tipo="vitrina" destacado="no">
+			<marca>Casa Verde</marca>
+		    <nombre_comercial>Vitrina Sena Cristal</nombre_comercial>
+		    <referencia>COM-004</referencia>
+		    <descripcion_corta>Vitrina estilizada para exponer vajilla y objetos decorativos.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Cristal y madera</caracteristica>
+		        <caracteristica nombre="color">Blanco roto</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">190</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">85</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">329.50</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">8</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/vitrina-sena-cristal-01.jpg</imagen>
+		        <imagen principal="no">img/productos/vitrina-sena-cristal-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR020" tipo="carro_auxiliar" destacado="no">
+			<marca>Linea Viva</marca>
+		    <nombre_comercial>Carro Auxiliar Menta</nombre_comercial>
+		    <referencia>COM-005</referencia>
+		    <descripcion_corta>Carro auxiliar practico para comedor, cocina o almacenaje ligero.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Metal y madera</caracteristica>
+		        <caracteristica nombre="color">Verde menta</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">85</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">70</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">109.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/carro-auxiliar-menta-01.jpg</imagen>
+		        <imagen principal="no">img/productos/carro-auxiliar-menta-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR021" tipo="canape" destacado="si">
+			<marca>EcoDream</marca>
+		    <nombre_comercial>Canape Lira Blanco</nombre_comercial>
+		    <referencia>DES-006</referencia>
+		    <descripcion_corta>Canape funcional con espacio interior para guardar textiles y accesorios.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera laminada</caracteristica>
+		        <caracteristica nombre="color">Blanco</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">38</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">190</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">150</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">429.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">8</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/canape-lira-blanco-01.jpg</imagen>
+		        <imagen principal="no">img/productos/canape-lira-blanco-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR022" tipo="banco_baul" destacado="no">
+			<marca>Nordic Home</marca>
+		    <nombre_comercial>Banco Baul Nexo Arena</nombre_comercial>
+		    <referencia>DES-007</referencia>
+		    <descripcion_corta>Banco con almacenaje interior para dormitorio o recibidor.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Tela y madera</caracteristica>
+		        <caracteristica nombre="color">Arena</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">48</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">42</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">110</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">139.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/banco-baul-nexo-arena-01.jpg</imagen>
+		        <imagen principal="no">img/productos/banco-baul-nexo-arena-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR023" tipo="perchero" destacado="no">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Perchero Vertical Haya</nombre_comercial>
+		    <referencia>ALM-005</referencia>
+		    <descripcion_corta>Perchero de pie compacto para organizar prendas y accesorios.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de haya</caracteristica>
+		        <caracteristica nombre="color">Natural</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">175</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">35</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">35</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">59.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/perchero-vertical-haya-01.jpg</imagen>
+		        <imagen principal="no">img/productos/perchero-vertical-haya-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR024" tipo="modulo_cajones" destacado="si">
+			<marca>Casa Verde</marca>
+		    <nombre_comercial>Modulo Cajones Tundra</nombre_comercial>
+		    <referencia>ALM-006</referencia>
+		    <descripcion_corta>Modulo de almacenaje versatil para dormitorio, oficina o salon.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y metal</caracteristica>
+		        <caracteristica nombre="color">Gris antracita</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">78</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">80</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">169.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/modulo-cajones-tundra-01.jpg</imagen>
+		        <imagen principal="no">img/productos/modulo-cajones-tundra-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR025" tipo="arcón" destacado="no">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Arcon Boreal Roble</nombre_comercial>
+		    <referencia>ALM-007</referencia>
+		    <descripcion_corta>Arcon decorativo para guardar mantas, cojines o juguetes.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de roble</caracteristica>
+		        <caracteristica nombre="color">Roble oscuro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">52</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">45</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">199.50</precio>
+		    <disponibilidad>Pocas unidades</disponibilidad>
+		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/arcon-boreal-roble-01.jpg</imagen>
+		        <imagen principal="no">img/productos/arcon-boreal-roble-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR026" tipo="mesa_jardin" destacado="no">
+			<marca>Sun Garden</marca>
+		    <nombre_comercial>Mesa Jardin Mistral</nombre_comercial>
+		    <referencia>EXT-007</referencia>
+		    <descripcion_corta>Mesa amplia para reuniones al aire libre en jardin o terraza.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Aluminio y cristal</caracteristica>
+		        <caracteristica nombre="color">Grafito</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">74</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">160</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">90</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">259.99</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesa-jardin-mistral-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesa-jardin-mistral-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR027" tipo="baul_exterior" destacado="si">
+			<marca>Outdoor Life</marca>
+		    <nombre_comercial>Baul Terra Box</nombre_comercial>
+		    <referencia>EXT-008</referencia>
+		    <descripcion_corta>Baul resistente para guardar cojines y accesorios de exterior.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Resina reforzada</caracteristica>
+		        <caracteristica nombre="color">Marron</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">60</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">55</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">130</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">149.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/baul-terra-box-01.jpg</imagen>
+		        <imagen principal="no">img/productos/baul-terra-box-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR028" tipo="sillon_exterior" destacado="no">
+			<marca>Terra Natura</marca>
+		    <nombre_comercial>Sillon Veranda Beige</nombre_comercial>
+		    <referencia>EXT-009</referencia>
+		    <descripcion_corta>Sillon de exterior comodo para terraza, porche o patio.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Ratán sintetico y metal</caracteristica>
+		        <caracteristica nombre="color">Beige</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">88</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">72</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">76</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">179.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/sillon-veranda-beige-01.jpg</imagen>
+		        <imagen principal="no">img/productos/sillon-veranda-beige-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR029" tipo="mueble_bar" destacado="no">
+			<marca>Linea Viva</marca>
+		    <nombre_comercial>Mueble Bar Atlas</nombre_comercial>
+		    <referencia>COM-006</referencia>
+		    <descripcion_corta>Mueble auxiliar para comedor con espacio para copas y botellas.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y cristal</caracteristica>
+		        <caracteristica nombre="color">Nogal</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">145</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">42</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">90</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">289.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mueble-bar-atlas-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mueble-bar-atlas-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR030" tipo="banco_comedor" destacado="si">
+			<marca>Nordic Home</marca>
+		    <nombre_comercial>Banco Comedor Otoño</nombre_comercial>
+		    <referencia>COM-007</referencia>
+		    <descripcion_corta>Banco de comedor con diseño limpio para espacios modernos.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera maciza</caracteristica>
+		        <caracteristica nombre="color">Nogal claro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">46</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">38</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">160</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">154.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/banco-comedor-otono-01.jpg</imagen>
+		        <imagen principal="no">img/productos/banco-comedor-otono-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR031" tipo="mesa_centro" destacado="no">
+			<marca>Casa Verde</marca>
+		    <nombre_comercial>Mesa Centro Aura</nombre_comercial>
+		    <referencia>DES-008</referencia>
+		    <descripcion_corta>Mesa de centro versatil para salon y zonas de descanso.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y cristal</caracteristica>
+		        <caracteristica nombre="color">Roble claro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">42</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">60</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">110</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">159.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesa-centro-aura-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesa-centro-aura-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR032" tipo="mueble_tv" destacado="si">
+			<marca>Nordic Home</marca>
+		    <nombre_comercial>Mueble TV Duna</nombre_comercial>
+		    <referencia>DES-009</referencia>
+		    <descripcion_corta>Mueble para television con espacio de almacenaje y diseño moderno.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera laminada</caracteristica>
+		        <caracteristica nombre="color">Blanco roto</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">52</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">150</caracteristica>
+		        <caracteristica nombre="categoria">Descanso</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">209.00</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mueble-tv-duna-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mueble-tv-duna-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR033" tipo="libreria" destacado="no">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Libreria Horizonte</nombre_comercial>
+		    <referencia>ALM-008</referencia>
+		    <descripcion_corta>Libreria alta para organizar libros, cajas y elementos decorativos.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y metal</caracteristica>
+		        <caracteristica nombre="color">Negro mate</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">190</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">35</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">100</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">239.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/libreria-horizonte-01.jpg</imagen>
+		        <imagen principal="no">img/productos/libreria-horizonte-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR034" tipo="cajonera" destacado="no">
+			<marca>EcoDream</marca>
+		    <nombre_comercial>Cajonera Alba</nombre_comercial>
+		    <referencia>ALM-009</referencia>
+		    <descripcion_corta>Cajonera compacta para guardar ropa, papeles o accesorios del hogar.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera de pino</caracteristica>
+		        <caracteristica nombre="color">Blanco mate</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">95</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">70</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">149.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/cajonera-alba-01.jpg</imagen>
+		        <imagen principal="no">img/productos/cajonera-alba-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR035" tipo="armario_multiusos" destacado="si">
+			<marca>Ordena+</marca>
+		    <nombre_comercial>Armario Multiusos Delta</nombre_comercial>
+		    <referencia>ALM-010</referencia>
+		    <descripcion_corta>Armario practico para cocina, lavadero o zonas auxiliares del hogar.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera laminada</caracteristica>
+		        <caracteristica nombre="color">Gris perla</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">185</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">38</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">80</caracteristica>
+		        <caracteristica nombre="categoria">Almacenamiento</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">199.99</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/armario-multiusos-delta-01.jpg</imagen>
+		        <imagen principal="no">img/productos/armario-multiusos-delta-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR036" tipo="set_jardin" destacado="si">
+			<marca>Sun Garden</marca>
+		    <nombre_comercial>Set Jardin Boreal</nombre_comercial>
+		    <referencia>EXT-010</referencia>
+		    <descripcion_corta>Conjunto de exterior ideal para disfrutar de comidas y reuniones al aire libre.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Aluminio y textileno</caracteristica>
+		        <caracteristica nombre="color">Gris piedra</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">75</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">180</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">100</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">649.00</precio>
+		    <disponibilidad>Pocas unidades</disponibilidad>
+		    <tiempo_entrega unidad="dias">9</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/set-jardin-boreal-01.jpg</imagen>
+		        <imagen principal="no">img/productos/set-jardin-boreal-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR037" tipo="mesa_plegable" destacado="no">
+			<marca>Outdoor Life</marca>
+		    <nombre_comercial>Mesa Plegable Costa</nombre_comercial>
+		    <referencia>EXT-011</referencia>
+		    <descripcion_corta>Mesa plegable ligera para balcon, patio o jardin.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Metal pintado</caracteristica>
+		        <caracteristica nombre="color">Azul oscuro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">72</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">70</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">70</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">79.90</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesa-plegable-costa-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesa-plegable-costa-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR038" tipo="silla_plegable" destacado="no">
+			<marca>Terra Natura</marca>
+		    <nombre_comercial>Silla Plegable Lima</nombre_comercial>
+		    <referencia>EXT-012</referencia>
+		    <descripcion_corta>Silla plegable comoda y practica para espacios exteriores pequenos.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Metal y textileno</caracteristica>
+		        <caracteristica nombre="color">Verde salvia</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">82</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">48</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">44</caracteristica>
+		        <caracteristica nombre="categoria">Exterior</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">49.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/silla-plegable-lima-01.jpg</imagen>
+		        <imagen principal="no">img/productos/silla-plegable-lima-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR039" tipo="consola" destacado="no">
+			<marca>Linea Viva</marca>
+		    <nombre_comercial>Consola Siena</nombre_comercial>
+		    <referencia>COM-008</referencia>
+		    <descripcion_corta>Consola elegante para comedor, recibidor o espacio auxiliar.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera y acero</caracteristica>
+		        <caracteristica nombre="color">Nogal y negro</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">80</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">35</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">189.50</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/consola-siena-01.jpg</imagen>
+		        <imagen principal="no">img/productos/consola-siena-02.jpg</imagen>
+			</imagenes>
+		</producto>
+		
+		<producto id="PR040" tipo="mesa_redonda" destacado="si">
+			<marca>Nordic Home</marca>
+		    <nombre_comercial>Mesa Redonda Olmo</nombre_comercial>
+		    <referencia>COM-009</referencia>
+		    <descripcion_corta>Mesa redonda de comedor pensada para reuniones acogedoras y espacios luminosos.</descripcion_corta>
+		    <caracteristicas>
+				<caracteristica nombre="material">Madera maciza</caracteristica>
+		        <caracteristica nombre="color">Natural</caracteristica>
+		        <caracteristica nombre="alto" unidad="cm">76</caracteristica>
+		        <caracteristica nombre="largo" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="ancho" unidad="cm">120</caracteristica>
+		        <caracteristica nombre="categoria">Comedor</caracteristica>
+			</caracteristicas>
+		    <precio moneda="EUR">319.95</precio>
+		    <disponibilidad>Disponible</disponibilidad>
+		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
+		    <imagenes>
+				<imagen principal="si">img/productos/mesa-redonda-olmo-01.jpg</imagen>
+		        <imagen principal="no">img/productos/mesa-redonda-olmo-02.jpg</imagen>
+			</imagenes>
+		</producto>
+	</productos>
+</llar_online>
