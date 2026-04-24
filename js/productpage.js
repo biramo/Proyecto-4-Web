@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const idProducto = params.get("id");
 
     // Cargamos el XML y buscamos el producto con ese id
-    cargarProducto("producto", "../xml/llar_online.xml", idProducto);
+    cargarProducto("producto", "xml/llar_online.xml", idProducto);
 });
 
 
@@ -16,6 +16,7 @@ function cargarProducto(idContenedor, archivo, idProducto) {
     fetch(archivo)
         .then(function (respuesta) {
             // Convertimos la respuesta del archivo en texto
+            console.log(respuesta);
             return respuesta.text();
         })
         .then(function (textoXml) {
