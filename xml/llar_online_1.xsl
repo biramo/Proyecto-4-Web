@@ -67,7 +67,7 @@
                                     <xsl:sort select="nombre_comercial" order="ascending"/>
 
                                     <tr class="tabla_fila">
-                                        <td class="tabla_td"><xsl:value-of select="nombre_comercial"/></td>
+                                        <td class="tabla_td"><a class="tabla_link" href="../producto.html?id={@id}"><xsl:value-of select="nombre_comercial"/></a></td>
                                         <td class="tabla_td"><xsl:value-of select="marca"/></td>
                                         <td class="tabla_td"><xsl:value-of select="referencia"/></td>
                                         <td class="tabla_td"><xsl:value-of select="caracteristicas/caracteristica[@nombre='material']"/></td>
@@ -129,7 +129,7 @@
                                     <xsl:sort select="nombre_comercial" order="ascending"/>
 
                                     <tr class="tabla_fila">
-                                        <td class="tabla_td"><xsl:value-of select="nombre_comercial"/></td>
+                                        <td class="tabla_td"><a class="tabla_link" href="../producto.html?id={@id}"><xsl:value-of select="nombre_comercial"/></a></td>
                                         <td class="tabla_td"><xsl:value-of select="marca"/></td>
                                         <td class="tabla_td"><xsl:value-of select="referencia"/></td>
                                         <td class="tabla_td"><xsl:value-of select="caracteristicas/caracteristica[@nombre='material']"/></td>
@@ -191,7 +191,7 @@
                                     <xsl:sort select="nombre_comercial" order="ascending"/>
 
                                     <tr class="tabla_fila">
-                                        <td class="tabla_td"><xsl:value-of select="nombre_comercial"/></td>
+                                        <td class="tabla_td"><a class="tabla_link" href="../producto.html?id={@id}"><xsl:value-of select="nombre_comercial"/></a></td>
                                         <td class="tabla_td"><xsl:value-of select="marca"/></td>
                                         <td class="tabla_td"><xsl:value-of select="referencia"/></td>
                                         <td class="tabla_td"><xsl:value-of select="caracteristicas/caracteristica[@nombre='material']"/></td>
@@ -253,7 +253,7 @@
                                     <xsl:sort select="nombre_comercial" order="ascending"/>
 
                                     <tr class="tabla_fila">
-                                        <td class="tabla_td"><xsl:value-of select="nombre_comercial"/></td>
+                                        <td class="tabla_td"><a class="tabla_link" href="../producto.html?id={@id}"><xsl:value-of select="nombre_comercial"/></a></td>
                                         <td class="tabla_td"><xsl:value-of select="marca"/></td>
                                         <td class="tabla_td"><xsl:value-of select="referencia"/></td>
                                         <td class="tabla_td"><xsl:value-of select="caracteristicas/caracteristica[@nombre='material']"/></td>

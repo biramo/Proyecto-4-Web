@@ -127,6 +127,10 @@
                                                 <strong>Descripción:</strong>
                                                 <xsl:value-of select="descripcion_corta"/>
                                             </p>
+
+                                            <a class="ficha_boton" href="../producto.html?id={@id}">
+                                                Ver producto
+                                            </a>
                                         </div>
 
                                     </div>
@@ -226,6 +230,11 @@
                                                 <strong>Descripción:</strong>
                                                 <xsl:value-of select="descripcion_corta"/>
                                             </p>
+
+                                            <a class="ficha_boton" href="../producto.html?id={@id}">
+                                                Ver producto
+                                            </a>
+                                            
                                         </div>
 
                                     </div>
