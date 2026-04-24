@@ -20,7 +20,7 @@
                     <a class="menu_link" href="../index.html">Inicio</a>
                 </li>
                 <li class="menu_item">
-                    <a class="menu_link" href="../presentacion.html">Presentación</a>
+                    <a class="menu_link" href="../sobre_nosotros.html">Sobre Nosotros</a>
                 </li>
                 <li class="menu_item">
                     <a class="menu_link" href="llar_online_1_tabla.xml">Productos tabla 1</a>
@@ -38,7 +38,7 @@
                     <a class="menu_link" href="../blog.html">Blog</a>
                 </li>
                 <li class="menu_item">
-                    <a class="menu_link" href="../formulario.html">Contacto</a>
+                    <a class="menu_link" href="../contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
