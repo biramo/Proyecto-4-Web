@@ -465,8 +465,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">8</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/canape-lira-blanco-01.jpg</imagen>
-		        <imagen principal="no">img/productos/canape-lira-blanco-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0021_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0021_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -487,8 +487,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/banco-baul-nexo-arena-01.jpg</imagen>
-		        <imagen principal="no">img/productos/banco-baul-nexo-arena-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0022_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0022_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -509,8 +509,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/perchero-vertical-haya-01.jpg</imagen>
-		        <imagen principal="no">img/productos/perchero-vertical-haya-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0023_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0023_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -531,8 +531,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/modulo-cajones-tundra-01.jpg</imagen>
-		        <imagen principal="no">img/productos/modulo-cajones-tundra-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0024_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0024_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -553,8 +553,8 @@
 		    <disponibilidad>Pocas unidades</disponibilidad>
 		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/arcon-boreal-roble-01.jpg</imagen>
-		        <imagen principal="no">img/productos/arcon-boreal-roble-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0025_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0025_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -575,8 +575,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/mesa-jardin-mistral-01.jpg</imagen>
-		        <imagen principal="no">img/productos/mesa-jardin-mistral-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0026_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0026_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -597,8 +597,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/baul-terra-box-01.jpg</imagen>
-		        <imagen principal="no">img/productos/baul-terra-box-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0027_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0027_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -619,8 +619,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/sillon-veranda-beige-01.jpg</imagen>
-		        <imagen principal="no">img/productos/sillon-veranda-beige-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0028_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0028_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -641,8 +641,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/mueble-bar-atlas-01.jpg</imagen>
-		        <imagen principal="no">img/productos/mueble-bar-atlas-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0029_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0029_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -663,8 +663,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/banco-comedor-otono-01.jpg</imagen>
-		        <imagen principal="no">img/productos/banco-comedor-otono-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0030_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0030_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -685,8 +685,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/mesa-centro-aura-01.jpg</imagen>
-		        <imagen principal="no">img/productos/mesa-centro-aura-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0031_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0031_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -707,8 +707,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/mueble-tv-duna-01.jpg</imagen>
-		        <imagen principal="no">img/productos/mueble-tv-duna-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0032_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0032_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -729,8 +729,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">7</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/libreria-horizonte-01.jpg</imagen>
-		        <imagen principal="no">img/productos/libreria-horizonte-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0033_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0033_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -751,8 +751,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">4</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/cajonera-alba-01.jpg</imagen>
-		        <imagen principal="no">img/productos/cajonera-alba-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0034_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0034_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -773,8 +773,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/armario-multiusos-delta-01.jpg</imagen>
-		        <imagen principal="no">img/productos/armario-multiusos-delta-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0035_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0035_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -795,8 +795,8 @@
 		    <disponibilidad>Pocas unidades</disponibilidad>
 		    <tiempo_entrega unidad="dias">9</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/set-jardin-boreal-01.jpg</imagen>
-		        <imagen principal="no">img/productos/set-jardin-boreal-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0036_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0036_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -817,8 +817,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/mesa-plegable-costa-01.jpg</imagen>
-		        <imagen principal="no">img/productos/mesa-plegable-costa-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0037_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0037_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -839,8 +839,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">3</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/silla-plegable-lima-01.jpg</imagen>
-		        <imagen principal="no">img/productos/silla-plegable-lima-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0038_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0038_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -861,8 +861,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">5</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/consola-siena-01.jpg</imagen>
-		        <imagen principal="no">img/productos/consola-siena-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0039_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0039_2.png</imagen>
 			</imagenes>
 		</producto>
 		
@@ -883,8 +883,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">6</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/mesa-redonda-olmo-01.jpg</imagen>
-		        <imagen principal="no">img/productos/mesa-redonda-olmo-02.jpg</imagen>
+				<imagen principal="si">img/productos/PR0040_1.png</imagen>
+		        <imagen principal="no">img/productos/PR0040_2.png</imagen>
 			</imagenes>
 		</producto>
 	</productos>
