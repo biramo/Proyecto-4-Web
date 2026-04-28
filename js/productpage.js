@@ -55,7 +55,7 @@ function crearFichaProducto(producto) {
             <div class="producto_img_box">
                 <img 
                     class="producto_img" 
-                    src="../${obtenerTexto(producto, "imagen")}" 
+                    src="${obtenerTexto(producto, "imagen")}" 
                     alt="${obtenerTexto(producto, "nombre_comercial")}"
                 >
             </div>
