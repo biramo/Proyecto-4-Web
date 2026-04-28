@@ -45,7 +45,7 @@ body {
     font-family: "Inter", Arial, sans-serif;
     font-size: 1rem;
     line-height: 1.6;
-    background-color: #f6f6f6;
+    background-color: #1C7A37;
     color: #222;
 }
 
@@ -67,6 +67,7 @@ ul {
 main {
     display: block;
     min-height: 80vh;
+    background-color: #ffffff;
 }
 
 .pag_wrap {
