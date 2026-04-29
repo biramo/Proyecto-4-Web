@@ -1364,6 +1364,25 @@ a.ficha_boton {
         width: 100%;
         text-align: center;
     }
+
+     .home_bg,
+    .home,
+    .home_overlay {
+        min-height: 28em;
+    }
+
+    .home__content {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .home__tit {
+        font-size: 2rem;
+    }
+
+    .home_txt {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1424,6 +1443,15 @@ a.ficha_boton {
     }
 
     .producto_boton_single {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__tit {
+        font-size: 1.6rem;
+    }
+
+    .home__btn {
         width: 100%;
         text-align: center;
     }
