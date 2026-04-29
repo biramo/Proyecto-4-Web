@@ -134,10 +134,6 @@
                                         </tr>
                                     </xsl:for-each>
                                 </table>
-
-                                <p class="volver_top">
-                                    <a class="volver_top_link" href="#inicio_tabla">Volver arriba</a>
-                                </p>
                             </div>
                         </section>
                     </main>
