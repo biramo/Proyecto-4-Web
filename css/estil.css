@@ -136,7 +136,7 @@ main {
 @media (max-width: 600px) {
     .cabecera_wrap {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1em;
     }
 
@@ -166,28 +166,99 @@ main {
     gap: 0.75em;
     padding: 1em;
     justify-content: center;
+    list-style: none;
+    margin: 0;
 }
 
 .menu_item {
     display: block;
+    position: relative;
 }
 
 .menu_link {
     font-family: "Inter", Arial, sans-serif;
-    font-weight: 700;
+    font-weight: 600;
     display: inline-block;
     padding: 0.7em 1em;
     background-color: #eeeeee;
     border: 0.0625em solid #d0d0d0;
     border-radius: 0.3em;
     font-size: 0.95rem;
-    font-weight: 600;
+    text-decoration: none;
+    color: #222;
 }
 
 .menu_link:hover,
 .menu_link.active {
     background-color: #1C7A37;
-    color: #fff;
+    color: #ffffff;
+}
+
+/* Si el elemento padre del submenu es un button */
+button.menu_link {
+    cursor: pointer;
+    font: inherit;
+}
+
+/* =========================
+   submenu
+========================= */
+
+.menu_item_sub {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 14em;
+    margin: 0;
+    padding: 0.5em 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 0.0625em solid #d9d9d9;
+    border-radius: 0.3em;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.08);
+    /*Inicia Oculto el submenu*/
+    display: none;
+    z-index: 1000;
+}
+
+/* En escritorio se abre al pasar el raton */
+.menu_item_sub:hover .submenu {
+    display: block;
+}
+
+/* En movil se abre cuando JavaScript añade esta clase */
+.menu_item_sub.submenu_abierto .submenu {
+    display: block;
+}
+
+.submenu_item {
+    display: block;
+}
+
+.submenu_link {
+    display: block;
+    padding: 0.75em 1em;
+    color: #222;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: "Inter", Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.submenu_link:hover,
+.submenu_link.active {
+    background-color: #1C7A37;
+    color: #ffffff;
+}
+
+/* Cuando una pagina del submenu esta activa, Catalogo tambien queda marcado */
+.menu_item_sub .menu_link.active {
+    background-color: #1C7A37;
+    color: #ffffff;
 }
 
 /* =========================
@@ -253,14 +324,24 @@ main {
 .menu_cat_link {
     display: inline-block;
     padding: 0.6em 0.9em;
-    background-color: #ffffff;
-    border: 0.0625em solid #d9d9d9;
+    background-color: #222222;
+    color: #ffffff;
+    border: 0.0625em solid #222222;
     border-radius: 0.3em;
     font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .menu_cat_link:hover {
-    background-color: #f0f0f0;
+    background-color: #1C7A37;
+    border-color: #1C7A37;
+    color: #ffffff;
+}
+
+.menu_cat_link:visited {
+    color: #ffffff;
 }
 
 /* =========================
@@ -520,6 +601,171 @@ main {
 }
 
 /* =========================
+   Tienda Online
+========================= */
+
+/* CATALOGO */
+
+.catalogo_titulo {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+}
+
+.catalogo_texto {
+    color: #555;
+    font-size: 1rem;
+    max-width: 45em;
+}
+
+.catalogo_resumen {
+    margin-bottom: 1em;
+}
+
+.catalogo_total {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.catalogo_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+}
+
+.producto_card {
+    background-color: #ffffff;
+    border: 0.0625em solid #e0e0e0;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto_card:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.08);
+}
+
+.producto_img_wrap {
+    position: relative;
+    background-color: #f7f7f7;
+    border-bottom: 0.0625em solid #e5e5e5;
+}
+
+.producto_img {
+    width: 100%;
+    height: 13em;
+    object-fit: cover;
+    display: block;
+}
+
+.producto_badge {
+    position: absolute;
+    top: 0.8em;
+    left: 0.8em;
+    background-color: #2f7d46;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35em 0.7em;
+    border-radius: 2em;
+}
+
+.producto_body {
+    padding: 1em;
+}
+
+.producto_categoria {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2f7d46;
+    margin-bottom: 0.5em;
+}
+
+.producto_nombre {
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    margin-bottom: 0.3em;
+    color: #222;
+}
+
+.producto_marca {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.7em;
+}
+
+.producto_desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.producto_meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.producto_tipo {
+    text-transform: capitalize;
+}
+
+.producto_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    border-top: 0.0625em solid #eeeeee;
+    padding-top: 1em;
+}
+
+.producto_precio {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+
+.producto_stock {
+    font-size: 0.8rem;
+    color: #2f7d46;
+}
+
+.producto_boton {
+    display: inline-block;
+    background-color: #222;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.7em 1em;
+    border-radius: 0.4em;
+    white-space: nowrap;
+}
+
+.producto_boton:hover {
+    background-color: #2f7d46;
+}
+
+a.ficha_boton {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #000;
+    display: inline-block;
+    color: #fff;
+}
+
+/* =========================
    footer
 ========================= */
 
@@ -569,6 +815,41 @@ main {
 }
 
 /* =========================
+   Flecha Volver al TOP
+========================= */
+
+.volver_top {
+    position: fixed;
+    right: 1.5em;
+    bottom: 1.5em;
+    margin: 0;
+    z-index: 1000;
+}
+
+.volver_top_link {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    border-radius: 50%;
+    box-shadow: 0 0.3em 0.9em rgba(0, 0, 0, 0.18);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.volver_top_link:hover {
+    background-color: #2f7d46;
+    transform: translateY(-0.15em);
+}
+
+/* =========================
    responsive
 ========================= */
 
@@ -595,6 +876,11 @@ main {
     .ficha_lista {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* Catalogo */
+    .catalogo_grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
@@ -602,8 +888,12 @@ main {
         grid-template-columns: 1fr;
     }
 
+    section{
+        max-width: 100%;
+    }
+
     .pag_wrap {
-        width: 94%;
+        width: 99%;
     }
 
     .cabecera {
@@ -631,6 +921,24 @@ main {
         width: 100%;
     }
 
+    .submenu {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+        margin-top: 0.5em;
+        padding: 0;
+    }
+
+    .submenu_link {
+        white-space: normal;
+        border-radius: 0.3em;
+    }
+
+    .menu_boton_sub {
+        width: 100%;
+        text-align: left;
+    }
+
     .ficha_card {
         flex-direction: column;
     }
@@ -652,6 +960,15 @@ main {
 
     .footer_logo {
         margin: 0 auto;
+    }
+
+    /* Catalogo */
+    .catalogo_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto_img {
+        height: 12em;
     }
 }
 
@@ -676,13 +993,30 @@ main {
     .ficha_nombre {
         font-size: 1.2rem;
     }
-}
 
-a.ficha_boton {
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    background: #000;
-    display: inline-block;
-    color: #fff;
+    /* Catalogo */
+    .catalogo_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .producto_footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .producto_boton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .volver_top {
+        right: 1em;
+        bottom: 1em;
+    }
+
+    .volver_top_link {
+        width: 2.6em;
+        height: 2.6em;
+        font-size: 1.2rem;
+    }
 }

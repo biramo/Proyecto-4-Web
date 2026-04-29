@@ -9,6 +9,7 @@
 
         <html>
             <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta charset="UTF-8"/>
                 <title>Llar Online - Tabla por disponibilidad</title>
                 <link rel="stylesheet" type="text/css" href="../css/estil.css"/>
@@ -87,9 +88,6 @@
                                     </xsl:for-each>
                                 </table>
 
-                                <p class="volver_top">
-                                    <a class="volver_top_link" href="#inicio_tabla">Volver arriba</a>
-                                </p>
                             </div>
 
                             <div class="bloque_tabla" id="pocas_unidades">
@@ -150,6 +148,7 @@
                         <xsl:text>
                             document.addEventListener("DOMContentLoaded", function() {
                                 activarMenuActual();
+                                activarSubmenus();
                             });
                         </xsl:text>
                     </script>
