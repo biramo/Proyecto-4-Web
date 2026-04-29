@@ -469,6 +469,97 @@ button.menu_link {
 }
 
 /* =========================
+   blog interior
+========================= */
+
+.blog_content {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.blog_articulo {
+    background-color: #ffffff;
+}
+
+.blog_articulo_header {
+    margin-bottom: 1.5em;
+}
+
+.blog_categoria {
+    display: inline-block;
+    margin-bottom: 0.8em;
+    padding: 0.35em 0.75em;
+    background-color: #1C7A37;
+    color: #ffffff;
+    border-radius: 2em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.blog_intro {
+    max-width: 48em;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.blog_img_principal {
+    margin-bottom: 2em;
+    border-radius: 0.6em;
+    overflow: hidden;
+    border: 0.0625em solid #e0e0e0;
+}
+
+.blog_img_principal img {
+    width: 100%;
+    max-height: 28em;
+    object-fit: cover;
+}
+
+.blog_texto {
+    max-width: 52em;
+    margin: 0 auto;
+}
+
+.blog_texto p {
+    margin-bottom: 1.2em;
+    color: #444;
+    line-height: 1.8;
+}
+
+.blog_texto h3 {
+    font-family: "Lora", serif;
+    font-size: 1.35rem;
+    margin: 1.6em 0 0.7em;
+    color: #222;
+}
+
+.blog_destacado {
+    margin: 2em 0;
+    padding: 1.5em;
+    background-color: rgb(229, 241, 234);
+    border-left: 0.35em solid #1C7A37;
+    border-radius: 0.4em;
+}
+
+.blog_destacado p {
+    margin: 0;
+    font-weight: 700;
+    color: #222;
+}
+
+.blog_acciones {
+    max-width: 52em;
+    margin: 2em auto 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+/* =========================
    formulario
 ========================= */
 
@@ -1181,6 +1272,23 @@ a.ficha_boton {
     }
 
     .cookies_btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog_content {
+        width: 94%;
+    }
+
+    .blog_img_principal img {
+        max-height: 20em;
+    }
+
+    .blog_acciones {
+        flex-direction: column;
+    }
+
+    .blog_acciones .producto_boton_single {
         width: 100%;
         text-align: center;
     }
