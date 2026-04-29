@@ -853,7 +853,6 @@ button.menu_link {
 
 .tl {
     display: flex;
-    width: 45%;
     background-color: rgb(229, 241, 234);
     border-radius: 1em;
     padding: 1.5em;
@@ -863,16 +862,37 @@ button.menu_link {
     gap: 1em;
 }
 
+.tli {
+    display: flex;
+    width: 45%;
+    border-radius: 1em;
+    padding: 1.5em;
+    margin-bottom: 0em;
+    position: relative;
+    flex-direction: column;
+    gap: 1em;
+}
+
 /* Tarjetas impares izquierda */
-.tl:nth-child(odd) {
+.tli:nth-child(odd) {
     margin-left: 0;
     margin-right: auto;
 }
 
 /* Tarjetas pares derecha */
-.tl:nth-child(even) {
+.tli:nth-child(even) {
     margin-left: auto;
     margin-right: 0;
+}
+
+.img_timeline{
+    text-align: center;
+    width: 100%;
+}
+
+.img_timeline img {
+    text-align: center;
+    display: inline-block;
 }
 
 /* =========================
