@@ -8,82 +8,6 @@
     <link rel="stylesheet" href="css/estil.css">
     <script src="js/menu_active.js" defer></script>
     <script src="js/scripts.js" defer></script>
-    <style>
-    .sobre_nosotros {
-        padding: 1em 2em; /* Separa el contenido de los bordes de la pantalla */
-        max-width: 100em ;
-        margin: 0 auto;    /* Centra todo el bloque en la pantalla */   
-    }
-
-    .titulo_sobre_nosotros{
-        margin-bottom: 1em;
-        text-align: center;
-    }
-    
-    .body_sobre_nosotros{
-        background-color: rgb(229, 241, 234);
-        padding: 2em;       /* Espacio interno para que el texto no toque el fondo verde */
-        border-radius: 1em;
-        margin-bottom: 2em;
-    
-    }
-
-    .img_sobre_nosotros{
-        display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center; 
-        width: 100%;       
-        max-width: 60em;
-        margin: 0 auto;    /* Centra el contenedor respecto a la página */
-        height: auto;
-        margin-bottom: 1em;
-    }
-    .txt_sobre_nosotros p{
-        line-height: 1.8;
-        font-family: "Inter",Arial, sans-serif;
-    }
-
-    .timeline_sobre_nosotros{
-        position: relative;
-        padding: 2em 0;
-    }
-
-    .timeline_sobre_nosotros::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: rgb(150, 200, 170);
-    transform: translateX(-50%);
-}
-.tl {
-    display: flex;
-    width: 45%;
-    background-color: rgb(229, 241, 234);
-    border-radius: 1em;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    position: relative;
-    flex-direction: column;
-    gap: 1em;
-}
-/* Tarjetas impares → izquierda */
-.tl:nth-child(odd) {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-/* Tarjetas pares → derecha */
-.tl:nth-child(even) {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-
-
-    </style>
 </head>
 <body>
 
@@ -93,7 +17,7 @@
     <main class="main">
         <section class="sobre_nosotros">
             <div class="titulo_sobre_nosotros">
-                <h2>
+                <h2 class="presentacion_tit">
                     Llar Online – Elevando la esencia de tu hogar.
                 </h2>
             </div>

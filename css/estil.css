@@ -49,6 +49,12 @@ body {
     color: #222;
 }
 
+section {
+    padding: 2em;
+    max-width: 80%;
+    margin: auto;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -167,7 +173,7 @@ main {
 }
 
 .menu_link {
-	font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 700;
     display: inline-block;
     padding: 0.7em 1em;
@@ -178,7 +184,8 @@ main {
     font-weight: 600;
 }
 
-.menu_link:hover, .menu_link.active {
+.menu_link:hover,
+.menu_link.active {
     background-color: #1C7A37;
     color: #fff;
 }
@@ -192,7 +199,7 @@ main {
 }
 
 .tit_sec_h2 {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.7rem;
     margin-bottom: 0.4em;
@@ -207,26 +214,15 @@ main {
    bloques de contenido
 ========================= */
 
-.inicio,
-.presentacion,
-.blog,
-.contacto,
-.cont_tabla,
-.cont_ficha {
-    background-color: #ffffff;
-    border: 0.0625em solid #d9d9d9;
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-}
-
 .inicio_tit,
 .presentacion_tit,
 .blog_tit,
 .contacto_tit {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 0.75em;
+    text-align: center;
 }
 
 .inicio_txt,
@@ -276,7 +272,7 @@ main {
 }
 
 .bloque_tabla_tit {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 0.8em;
@@ -303,7 +299,7 @@ main {
 }
 
 .tabla_col {
-	font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -316,7 +312,7 @@ main {
 }
 
 .bloque_ficha_tit {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 0.8em;
@@ -408,7 +404,7 @@ main {
 }
 
 .form_label {
-	font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
 }
@@ -441,6 +437,86 @@ main {
 
 .form_btn:hover {
     background-color: #e2e2e2;
+}
+
+/* =========================
+    Sobre Nosotros
+========================== */
+
+.sobre_nosotros {
+    padding: 1em 2em;
+}
+
+.titulo_sobre_nosotros {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.body_sobre_nosotros {
+    background-color: rgb(229, 241, 234);
+    padding: 2em;
+    /* Espacio interno para que el texto no toque el fondo verde */
+    border-radius: 1em;
+    margin-bottom: 2em;
+
+}
+
+.img_sobre_nosotros {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    /* Centra el contenedor respecto a la página */
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.txt_sobre_nosotros p {
+    line-height: 1.8;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.timeline_sobre_nosotros {
+    position: relative;
+    padding: 2em 0;
+}
+
+.timeline_sobre_nosotros::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgb(150, 200, 170);
+    transform: translateX(-50%);
+}
+
+.tl {
+    display: flex;
+    width: 45%;
+    background-color: rgb(229, 241, 234);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    position: relative;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Tarjetas impares izquierda */
+.tl:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Tarjetas pares derecha */
+.tl:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 /* =========================
@@ -516,13 +592,13 @@ main {
         padding: 0.7em;
     }
 
-	.ficha_lista {
+    .ficha_lista {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-	.ficha_lista {
+    .ficha_lista {
         grid-template-columns: 1fr;
     }
 
@@ -590,15 +666,6 @@ main {
 
     .tit_sec_h2 {
         font-size: 1.3rem;
-    }
-
-    .inicio,
-    .presentacion,
-    .blog,
-    .contacto,
-    .cont_tabla,
-    .cont_ficha {
-        padding: 1em;
     }
 
     .tabla_col,
