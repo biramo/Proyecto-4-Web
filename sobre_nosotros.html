@@ -47,26 +47,26 @@
     }
 
     .timeline_sobre_nosotros::before {
-    content: '';
-    position: absolute;
-    left: 50%;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: rgb(150, 200, 170);
-    transform: translateX(-50%);
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 2px;
+        background-color: #1C7A37;
+        transform: translateX(-50%);
 }
-.tl {
-    display: flex;
-    width: 45%;
-    background-color: rgb(229, 241, 234);
-    border-radius: 1em;
-    padding: 1.5em;
-    margin-bottom: 2em;
-    position: relative;
-    flex-direction: column;
-    gap: 1em;
-}
+    .tl {
+        display: flex;
+        width: 45%;
+        background-color: rgb(229, 241, 234);
+        border-radius: 1em;
+        padding: 1.2em;
+        margin: 1em;
+        position: relative;
+        flex-direction: column;
+        gap: 0.5em;
+    }
 /* Tarjetas impares → izquierda */
 .tl:nth-child(odd) {
     margin-left: 0;
@@ -79,7 +79,25 @@
     margin-right: 0;
 }
 
+/* Configuramos el conector base */
+.tl::after {
+    content: '';
+    position: absolute;
+    top: 2em;            /* Altura a la que sale la línea desde la tarjeta */
+    width: 11.2%;        /* El ancho necesario para llegar justo a la línea central (50% - 45% + margen) */
+    height: 2px;         /* Grosor de la línea */
+    background-color: #1C7A37; /* El mismo verde de tu línea central */
+}
 
+/* Conector para tarjetas en la IZQUIERDA (impares) */
+.tl:nth-child(odd)::after {
+    right: -11.2%;       /* Sale por la derecha de la tarjeta hacia el centro */
+}
+
+/* Conector para tarjetas en la DERECHA (pares) */
+.tl:nth-child(even)::after {
+    left: -11.2%;        /* Sale por la izquierda de la tarjeta hacia el centro */
+}
 
     </style>
 </head>
