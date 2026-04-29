@@ -346,6 +346,77 @@ button.menu_link {
 }
 
 /* =========================
+   Home "Index"
+========================= */
+/* =========================
+   home
+========================= */
+
+.home_bg {
+    min-height: 34em;
+    background-image: url("../img/home/home_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    min-height: 34em;
+    padding: 0;
+    max-width: none;
+    display: block;
+}
+
+.home_overlay {
+    min-height: 34em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.18);
+}
+
+.home__content {
+    width: 90%;
+    max-width: 48em;
+    padding: 2em;
+    border-radius: 0.6em;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: #ffffff;
+}
+
+.home__tit {
+    font-family: "Lora", serif;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin-bottom: 0.35em;
+}
+
+.home_txt {
+    font-size: 1.2rem;
+    margin-bottom: 1.2em;
+    color: #f5f5f5;
+}
+
+.home__btn {
+    display: inline-block;
+    padding: 0.8em 1.4em;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 0.3em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home__btn:hover {
+    background-color: #1C7A37;
+    color: #ffffff;
+}
+
+/* =========================
    tablas
 ========================= */
 

@@ -6,7 +6,9 @@
             <div class="cabecera_wrap">
 
                 <div class="cabecera_logo">
-                    <img src="../img/logos/logo_llar_online.png" alt="Logo de Llar Online" />
+                    <a href="../index.html">
+                        <img src="../img/logos/logo_llar_online.png" alt="Logo de Llar Online" />
+                    </a>
                 </div>
 
                 <div class="cabecera_contenido">
