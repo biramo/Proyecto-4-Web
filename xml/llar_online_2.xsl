@@ -15,6 +15,7 @@
                 <link rel="stylesheet" type="text/css" href="../css/estil.css"/>
                 <link rel="icon" href="../img/logos/favicon.ico" type="image/x-icon" />
                 <script src="../js/menu_active.js"></script>
+                <script src="../js/cookies.js"></script>
             </head>
 
             <body class="pag_tabla">

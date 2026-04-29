@@ -766,6 +766,136 @@ a.ficha_boton {
 }
 
 /* =========================
+   ficha producto individual
+========================= */
+
+.producto_single {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.producto_detalle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    background-color: #ffffff;
+    border: 0.0625em solid #e0e0e0;
+    border-radius: 0.6em;
+    padding: 2em;
+}
+
+.producto_galeria {
+    min-width: 0;
+}
+
+.producto_img_principal_box {
+    background-color: #f7f7f7;
+    border: 0.0625em solid #e5e5e5;
+    border-radius: 0.6em;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.producto_img_principal {
+    width: 100%;
+    height: 28em;
+    object-fit: cover;
+    display: block;
+}
+
+.producto_miniaturas {
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+}
+
+.producto_miniatura_btn {
+    width: 5em;
+    height: 5em;
+    padding: 0;
+    border: 0.125em solid #d9d9d9;
+    border-radius: 0.4em;
+    overflow: hidden;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.producto_miniatura_btn.active,
+.producto_miniatura_btn:hover {
+    border-color: #1C7A37;
+}
+
+.producto_miniatura_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto_info_single {
+    min-width: 0;
+}
+
+.producto_titulo_single {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.3em;
+}
+
+.producto_marca_single {
+    color: #777;
+    margin-bottom: 1em;
+}
+
+.producto_desc_single {
+    color: #555;
+    margin-bottom: 1.2em;
+}
+
+.producto_precio_single {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1em;
+}
+
+.producto_datos_single {
+    border-top: 0.0625em solid #eeeeee;
+    border-bottom: 0.0625em solid #eeeeee;
+    padding: 1em 0;
+    margin-bottom: 1.2em;
+}
+
+.producto_datos_single p {
+    margin-bottom: 0.45em;
+    color: #555;
+}
+
+.producto_datos_single strong {
+    color: #222;
+}
+
+.producto_acciones {
+    margin-top: 1em;
+}
+
+.producto_boton_single {
+    display: inline-block;
+    background-color: #222;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 0.8em 1.2em;
+    border-radius: 0.4em;
+}
+
+.producto_boton_single:hover {
+    background-color: #1C7A37;
+}
+
+/* =========================
    footer
 ========================= */
 
@@ -847,6 +977,67 @@ a.ficha_boton {
 .volver_top_link:hover {
     background-color: #2f7d46;
     transform: translateY(-0.15em);
+}
+
+/* =========================
+   aviso cookies
+========================= */
+
+.cookies_aviso {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cookies_box {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 1.4em;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.25);
+}
+
+.cookies_titulo {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+
+.cookies_txt p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.cookies_btn {
+    padding: 0.8em 2em;
+    background-color: #ffffff;
+    color: #222222;
+    border: 0.0625em solid #ffffff;
+    border-radius: 0.3em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cookies_btn:hover {
+    background-color: #1C7A37;
+    border-color: #1C7A37;
+    color: #ffffff;
 }
 
 /* =========================
@@ -970,6 +1161,29 @@ a.ficha_boton {
     .producto_img {
         height: 12em;
     }
+
+    .producto_detalle {
+        grid-template-columns: 1fr;
+        padding: 1.2em;
+    }
+
+    .producto_img_principal {
+        height: 20em;
+    }
+
+    .producto_titulo_single {
+        font-size: 1.6rem;
+    }
+
+    .cookies_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cookies_btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1018,5 +1232,19 @@ a.ficha_boton {
         width: 2.6em;
         height: 2.6em;
         font-size: 1.2rem;
+    }
+
+    .producto_img_principal {
+        height: 16em;
+    }
+
+    .producto_miniatura_btn {
+        width: 4.2em;
+        height: 4.2em;
+    }
+
+    .producto_boton_single {
+        width: 100%;
+        text-align: center;
     }
 }
