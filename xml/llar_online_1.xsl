@@ -12,13 +12,16 @@
                 <meta charset="UTF-8"/>
                 <title>Llar Online - Tabla por categorías</title>
                 <link rel="stylesheet" type="text/css" href="../css/estil.css"/>
+                <link rel="icon" href="../img/favicon.ico" type="image/x-icon" />
+                <script src="../js/menu_active.js"></script>
             </head>
 
             <body class="pag_tabla">
 
                 <div class="pag_wrap" id="inicio_tabla">
-
+                    <!-- Llamamos al header -->
                     <xsl:call-template name="cabecera"/>
+                    <!-- Llamamos al menu -->
                     <xsl:call-template name="menu"/>
 
                     <main class="cont_tabla">
@@ -294,8 +297,16 @@
                         </div>
 
                     </main>
-
+                    <!-- Llamamos al footer -->
                     <xsl:call-template name="footer"/>
+                     <!-- Llamamos a la funcion del archivo menu active para que pinte el menu activo -->
+                    <script>
+                        <xsl:text>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                activarMenuActual();
+                            });
+                        </xsl:text>
+                    </script>
 
                 </div>
 

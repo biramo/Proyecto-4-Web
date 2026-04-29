@@ -71,8 +71,6 @@ main {
 }
 
 .pag_wrap {
-    /* width: 90%;
-    max-width: 75em;*/
     margin: 0 auto;
 }
 
@@ -88,22 +86,18 @@ main {
 }
 
 .cabecera_wrap {
-    width: 90%;
-    max-width: 75em;
+    width: 70%;
+    max-width: 70em;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     gap: 1.5em;
-}
-
-.cabecera_logo {
-    flex-shrink: 0;
+    justify-content: center;
 }
 
 .cabecera_logo img {
-    width: 4.8em;
-    height: 4.8em;
+    width: 7em;
+    height: 7em;
     object-fit: contain;
     display: block;
 }
@@ -165,6 +159,7 @@ main {
     flex-wrap: wrap;
     gap: 0.75em;
     padding: 1em;
+    justify-content: center;
 }
 
 .menu_item {
@@ -183,8 +178,9 @@ main {
     font-weight: 600;
 }
 
-.menu_link:hover {
-    background-color: #e2e2e2;
+.menu_link:hover, .menu_link.active {
+    background-color: #1C7A37;
+    color: #fff;
 }
 
 /* =========================
