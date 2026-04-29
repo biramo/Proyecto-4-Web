@@ -16,38 +16,60 @@
 
     <div id="header_box"></div>
     <div id="menu_box"></div>
+
     <main class="main">
         <section class="contact_page">
-            <div class="formulario_contacto">
-                <div class="tit_sec_h2">
-                    <h2 class="contacto_tit">
-                        ¡Contáctanos!
-                    </h2>
+
+            <div class="contact_wrap">
+
+                <div class="contact_img_box">
+                    <img class="contact_img" src="img/contacto/contacto.png" alt="Interior de hogar sostenible">
                 </div>
-                <div class="formulario">
-                    <form>
-                        <div class="formulario_nombre">
-                            <label> Nombre:</label>
-                            <input type="text" placeholder="Escribe tu nombre">
+
+                <div class="contact_form_box">
+
+                    <div class="tit_sec">
+                        <h2 class="tit_sec_h2">¡Contáctanos!</h2>
+                        <p class="tit_sec_txt">
+                            Escríbenos si tienes dudas sobre nuestros productos, disponibilidad o tiempos de entrega.
+                        </p>
+                    </div>
+
+                    <form class="contact_form">
+
+                        <div class="contact_grupo">
+                            <label class="contact_label" for="nombre">Nombre:</label>
+                            <input class="contact_input" id="nombre" type="text" placeholder="Escribe tu nombre">
                         </div>
-                        <div class="formulario_telefono">
-                            <label> Telefono de contacto:</label>
-                            <input type="number" placeholder="Telefono ">
+
+                        <div class="contact_grupo">
+                            <label class="contact_label" for="telefono">Teléfono de contacto:</label>
+                            <input class="contact_input" id="telefono" type="tel" placeholder="Escribe tu teléfono">
                         </div>
-                        <div class="formulario_email">
-                            <label> Email:</label>
-                            <input type="text" placeholder="Email ">
+
+                        <div class="contact_grupo">
+                            <label class="contact_label" for="email">Email:</label>
+                            <input class="contact_input" id="email" type="email" placeholder="Escribe tu email">
                         </div>
-                        <div class="formulario_comentario">
-                            <label> Comentario o sugerencia:</label>
-                            <input type="text" placeholder="">
+
+                        <div class="contact_grupo">
+                            <label class="contact_label" for="comentario">Comentario o sugerencia:</label>
+                            <textarea class="contact_textarea" id="comentario" placeholder="Cuéntanos en qué podemos ayudarte"></textarea>
                         </div>
+
+                        <button class="contact_btn" type="submit">
+                            Enviar mensaje
+                        </button>
+
                     </form>
+
                 </div>
+
             </div>
 
         </section>
     </main>
+
     <div id="footer_box"></div>
 
 </body>
