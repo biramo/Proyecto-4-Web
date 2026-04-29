@@ -1,76 +1,99 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Llar Online - Blog</title>
+    <link rel="icon" href="img/logos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estil.css">
+    <script src="js/menu_active.js" defer></script>
     <script src="js/scripts.js" defer></script>
+    <script src="js/cookies.js"></script>
 </head>
+
 <body>
 
     <div id="header_box"></div>
     <div id="menu_box"></div>
 
     <main class="main">
-        <section class="blog_content ficha_lista">
-            <div class="ficha_card">
-                <div class="ficha_img_box">
-                    <img class="ficha_img" src="img/blog_img/foto_viaje_materia_prima_blog.png"/>
+        <section class="blog_content">
+
+            <h2 class="blog_tit">Noticias</h2>
+            <div class="ficha_lista">
+                <div class="ficha_card">
+                    <div class="ficha_img_box">
+                        <a href="blog_del_bosque_al_salon.html">
+                            <img class="ficha_img" src="img/blog_img/foto_viaje_materia_prima_blog.png" />
+                        </a>
+                    </div>
+
+                    <div class="ficha_info">
+                        <h3 class="ficha_nombre">
+                            <a href="blog_del_bosque_al_salon.html">"Del Bosque al Salón": El Viaje de la Materia Prima</a> 
+                        </h3>
+
+                        <p class="ficha_txt">
+                            Observa la transformación: desde el tablón de roble en bruto hasta el acabado sedoso de
+                            nuestra Cama Brisa. Un proceso de lijado y pulido de precisión que respeta la veta natural
+                            de la madera.
+                        </p>
+                    </div>
                 </div>
+                <div class="ficha_card">
+                    <div class="ficha_img_box">
+                        <a href="blog_guia_certificaciones.html">
+                            <img class="ficha_img" src="img/blog_img/foto_guia_certificaciones_blog.png" />
+                        </a>
+                    </div>
 
-                <div class="ficha_info">
-                    <h3 class="ficha_nombre">
-                        "Del Bosque al Salón": El Viaje de la Materia Prima
-                    </h3>
+                    <div class="ficha_info">
+                        <h3 class="ficha_nombre">
+                            <a href="blog_guia_certificaciones.html">Guía de Certificaciones: ¿Qué significan realmente las etiquetas?</a> 
+                        </h3>
 
-                    <p class="ficha_txt">
-                        Observa la transformación: desde el tablón de roble en bruto hasta el acabado sedoso de nuestra Cama Brisa. Un proceso de lijado y pulido de precisión que respeta la veta natural de la madera.
-                    </p>                                            
+                        <p class="ficha_txt">
+                            No todas las etiquetas verdes son iguales. Desglosamos el significado de los sellos FSC,
+                            PEFC y Ecolabel para que entiendas cómo tu compra ayuda a proteger los bosques y reducir la
+                            huella de carbono.
+                        </p>
+                    </div>
                 </div>
-            </div>    
-            <div class="ficha_card">
-                <div class="ficha_img_box">
-                    <img class="ficha_img" src="img/blog_img/foto_guia_certificaciones_blog.png"/>
+                <div class="ficha_card">
+                    <div class="ficha_img_box">
+                        <a href="blog_mantenimiento_eco.html">
+                            <img class="ficha_img" src="img/blog_img/foto_consejo_mantenimiento_blog.png" />
+                        </a>
+                    </div>
+
+                    <div class="ficha_info">
+                        <h3 class="ficha_nombre">
+                           <a href="blog_mantenimiento_eco.html">Consejos de Mantenimiento Eco-Friendly</a> 
+                        </h3>
+
+                        <p class="ficha_txt">
+                            Aprende a cuidar tus muebles de madera maciza sin recurrir a químicos agresivos. Trucos
+                            naturales y rutinas sencillas para que la belleza del roble perdure durante generaciones.
+                        </p>
+                    </div>
                 </div>
+                <div class="ficha_card">
+                    <div class="ficha_img_box">
+                        <a href="blog_huella_de_carbono.html">
+                            <img class="ficha_img" src="img/blog_img/grafico_emisiones_blog.png" />
+                        </a>
+                    </div>
 
-                <div class="ficha_info">
-                    <h3 class="ficha_nombre">
-                        Guía de Certificaciones: ¿Qué significan realmente las etiquetas?
-                    </h3>
+                    <div class="ficha_info">
+                        <h3 class="ficha_nombre">
+                            <a href="blog_huella_de_carbono.html">Comparativa de Huella de Carbono</a>
+                        </h3>
 
-                    <p class="ficha_txt">
-                        No todas las etiquetas verdes son iguales. Desglosamos el significado de los sellos FSC, PEFC y Ecolabel para que entiendas cómo tu compra ayuda a proteger los bosques y reducir la huella de carbono.
-                    </p>                                            
-                </div>
-            </div>
-             <div class="ficha_card">
-                <div class="ficha_img_box">
-                    <img class="ficha_img" src="img/blog_img/foto_consejo_mantenimiento_blog.png"/>
-                </div>
-
-                <div class="ficha_info">
-                    <h3 class="ficha_nombre">
-                        Consejos de Mantenimiento Eco-Friendly
-                    </h3>
-
-                    <p class="ficha_txt">
-                        Aprende a cuidar tus muebles de madera maciza sin recurrir a químicos agresivos. Trucos naturales y rutinas sencillas para que la belleza del roble perdure durante generaciones.
-                    </p>                                            
-                </div>
-            </div>  
-            <div class="ficha_card">
-                <div class="ficha_img_box">
-                    <img class="ficha_img" src="img/blog_img/grafico_emisiones_blog.png"/>
-                </div>
-
-                <div class="ficha_info">
-                    <h3 class="ficha_nombre">
-                        Comparativa de Huella de Carbono (CO2​)
-                    </h3>
-
-                    <p class="ficha_txt">
-                    El impacto del transporte. Visualiza cómo la fabricación local reduce drásticamente las emisiones de CO2​ en comparación con los muebles de importación masiva.                    </p>                                            
+                        <p class="ficha_txt">
+                            El impacto del transporte. Visualiza cómo la fabricación local reduce drásticamente las
+                            emisiones de CO2​ en comparación con los muebles de importación masiva. </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -79,4 +102,5 @@
     <div id="footer_box"></div>
 
 </body>
+
 </html>

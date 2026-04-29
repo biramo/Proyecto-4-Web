@@ -223,8 +223,8 @@
 		    <disponibilidad>Disponible</disponibilidad>
 		    <tiempo_entrega unidad="dias">9</tiempo_entrega>
 		    <imagenes>
-				<imagen principal="si">img/productos/PR0010_1.png</imagen>
-		        <imagen principal="no">img/productos/PR0010_2.png</imagen>
+				<imagen principal="si">img/productos/PR010_1.png</imagen>
+		        <imagen principal="no">img/productos/PR010_2.png</imagen>
 			</imagenes>
 		</producto>
 		

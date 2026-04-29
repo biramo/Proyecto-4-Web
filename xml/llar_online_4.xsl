@@ -9,246 +9,216 @@
 
         <html>
             <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
                 <meta charset="UTF-8"/>
                 <title>Llar Online - Fichas 2</title>
                 <link rel="stylesheet" type="text/css" href="../css/estil.css"/>
+                <link rel="icon" href="../img/logos/favicon.ico" type="image/x-icon"/>
+                <script src="../js/menu_active.js"></script>
+                <script src="../js/cookies.js"></script>
             </head>
 
-            <body class="pag_ficha">
+            <body class="pag_catalogo">
 
                 <div class="pag_wrap" id="inicio_fichas">
 
+                    <!-- Llamamos al header -->
                     <xsl:call-template name="cabecera"/>
+                    <!-- Llamamos al menu -->
                     <xsl:call-template name="menu"/>
 
-                    <main class="cont_ficha">
+                    <main class="catalogo">
 
-                        <div class="tit_sec">
-                            <h2 class="tit_sec_h2">Fichas de productos</h2>
-                            <p class="tit_sec_txt">Productos de las categorías Comedor y Almacenamiento</p>
-                        </div>
+                        <section class="catalogo_intro">
+                            <div class="tit_sec">
+                                <h2 class="tit_sec_h2">Productos de las categorías Comedor y Almacenamiento</h2>
+                                <p class="tit_sec_txt"></p>
+                                <p class="catalogo_total">
+                                    Productos mostrados:
+                                    <strong>
+                                        <xsl:value-of select="count(/llar_online/productos/producto[caracteristicas/caracteristica[@nombre='categoria']='Comedor' or caracteristicas/caracteristica[@nombre='categoria']='Almacenamiento'])"/>
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="menu_cat">
+                                <ul class="menu_cat_lista">
+                                    <li class="menu_cat_item">
+                                        <a class="menu_cat_link" href="#comedor">Comedor</a>
+                                    </li>
+                                    <li class="menu_cat_item">
+                                        <a class="menu_cat_link" href="#almacenamiento">Almacenamiento</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
 
-                        <div class="menu_cat">
-                            <ul class="menu_cat_lista">
-                                <li class="menu_cat_item">
-                                    <a class="menu_cat_link" href="#comedor">Comedor</a>
-                                </li>
-                                <li class="menu_cat_item">
-                                    <a class="menu_cat_link" href="#almacenamiento">Almacenamiento</a>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div class="bloque_ficha" id="comedor">
+                        <section class="bloque_ficha" id="comedor">
                             <h2 class="bloque_ficha_tit">Comedor</h2>
 
-                            <div class="ficha_lista">
+                            <div class="catalogo_grid">
+
                                 <xsl:for-each select="/llar_online/productos/producto[caracteristicas/caracteristica[@nombre='categoria']='Comedor']">
                                     <xsl:sort select="marca" order="ascending"/>
                                     <xsl:sort select="nombre_comercial" order="ascending"/>
 
-                                    <div class="ficha_card">
+                                    <article class="producto_card">
 
-                                        <div class="ficha_img_box">
-                                            <img class="ficha_img" src="../{imagenes/imagen[@principal='si']}" alt="{nombre_comercial}"/>
+                                        <div class="producto_img_wrap">
+                                            <xsl:if test="@destacado='si'">
+                                                <span class="producto_badge">Destacado</span>
+                                            </xsl:if>
+
+                                            <img class="producto_img" src="../{imagenes/imagen[@principal='si']}" alt="{nombre_comercial}"/>
                                         </div>
 
-                                        <div class="ficha_info">
-                                            <h3 class="ficha_nombre">
+                                        <div class="producto_body">
+
+                                            <p class="producto_categoria">
+                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='categoria']"/>
+                                            </p>
+
+                                            <h3 class="producto_nombre">
                                                 <xsl:value-of select="nombre_comercial"/>
                                             </h3>
 
-                                            <p class="ficha_txt">
-                                                <strong>Marca:</strong>
+                                            <p class="producto_marca">
                                                 <xsl:value-of select="marca"/>
                                             </p>
 
-                                            <p class="ficha_txt">
-                                                <strong>Referencia:</strong>
-                                                <xsl:value-of select="referencia"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Tipo:</strong>
-                                                <xsl:value-of select="@tipo"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Material:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='material']"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Color:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='color']"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Alto:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='alto']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='alto']/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Largo:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='largo']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='largo']/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Ancho:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='ancho']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='ancho']/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Precio:</strong>
-                                                <xsl:value-of select="precio"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="precio/@moneda"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Disponibilidad:</strong>
-                                                <xsl:value-of select="disponibilidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Tiempo de entrega:</strong>
-                                                <xsl:value-of select="tiempo_entrega"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="tiempo_entrega/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Descripción:</strong>
+                                            <p class="producto_desc">
                                                 <xsl:value-of select="descripcion_corta"/>
                                             </p>
 
-                                            <a class="ficha_boton" href="../producto.html?id={@id}">
-                                                Ver producto
-                                            </a>
+                                            <div class="producto_meta">
+                                                <span class="producto_ref">
+                                                    Ref:
+                                                    <xsl:value-of select="referencia"/>
+                                                </span>
+
+                                                <span class="producto_tipo">
+                                                    <xsl:value-of select="@tipo"/>
+                                                </span>
+                                            </div>
+
+                                            <div class="producto_footer">
+
+                                                <div>
+                                                    <p class="producto_precio">
+                                                        <xsl:value-of select="precio"/>
+                                                        <xsl:text> </xsl:text>
+                                                        <xsl:value-of select="precio/@moneda"/>
+                                                    </p>
+
+                                                    <p class="producto_stock">
+                                                        <xsl:value-of select="disponibilidad"/>
+                                                    </p>
+                                                </div>
+
+                                                <a class="producto_boton" href="../producto.html?id={@id}">
+                                                    Ver producto
+                                                </a>
+
+                                            </div>
+
                                         </div>
 
-                                    </div>
+                                    </article>
+
                                 </xsl:for-each>
+
                             </div>
+                        </section>
 
-                            <p class="volver_top">
-                                <a class="volver_top_link" href="#inicio_fichas">Volver arriba</a>
-                            </p>
-                        </div>
-
-                        <div class="bloque_ficha" id="almacenamiento">
+                        <section class="bloque_ficha" id="almacenamiento">
                             <h2 class="bloque_ficha_tit">Almacenamiento</h2>
 
-                            <div class="ficha_lista">
+                            <div class="catalogo_grid">
+
                                 <xsl:for-each select="/llar_online/productos/producto[caracteristicas/caracteristica[@nombre='categoria']='Almacenamiento']">
                                     <xsl:sort select="marca" order="ascending"/>
                                     <xsl:sort select="nombre_comercial" order="ascending"/>
 
-                                    <div class="ficha_card">
+                                    <article class="producto_card">
 
-                                        <div class="ficha_img_box">
-                                            <img class="ficha_img" src="../{imagenes/imagen[@principal='si']}" alt="{nombre_comercial}"/>
+                                        <div class="producto_img_wrap">
+                                            <xsl:if test="@destacado='si'">
+                                                <span class="producto_badge">Destacado</span>
+                                            </xsl:if>
+
+                                            <img class="producto_img" src="../{imagenes/imagen[@principal='si']}" alt="{nombre_comercial}"/>
                                         </div>
 
-                                        <div class="ficha_info">
-                                            <h3 class="ficha_nombre">
+                                        <div class="producto_body">
+
+                                            <p class="producto_categoria">
+                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='categoria']"/>
+                                            </p>
+
+                                            <h3 class="producto_nombre">
                                                 <xsl:value-of select="nombre_comercial"/>
                                             </h3>
 
-                                            <p class="ficha_txt">
-                                                <strong>Marca:</strong>
+                                            <p class="producto_marca">
                                                 <xsl:value-of select="marca"/>
                                             </p>
 
-                                            <p class="ficha_txt">
-                                                <strong>Referencia:</strong>
-                                                <xsl:value-of select="referencia"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Tipo:</strong>
-                                                <xsl:value-of select="@tipo"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Material:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='material']"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Color:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='color']"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Alto:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='alto']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='alto']/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Largo:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='largo']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='largo']/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Ancho:</strong>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='ancho']"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="caracteristicas/caracteristica[@nombre='ancho']/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Precio:</strong>
-                                                <xsl:value-of select="precio"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="precio/@moneda"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Disponibilidad:</strong>
-                                                <xsl:value-of select="disponibilidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Tiempo de entrega:</strong>
-                                                <xsl:value-of select="tiempo_entrega"/>
-                                                <xsl:text> </xsl:text>
-                                                <xsl:value-of select="tiempo_entrega/@unidad"/>
-                                            </p>
-
-                                            <p class="ficha_txt">
-                                                <strong>Descripción:</strong>
+                                            <p class="producto_desc">
                                                 <xsl:value-of select="descripcion_corta"/>
                                             </p>
 
-                                            <a class="ficha_boton" href="../producto.html?id={@id}">
-                                                Ver producto
-                                            </a>
-                                            
+                                            <div class="producto_meta">
+                                                <span class="producto_ref">
+                                                    Ref:
+                                                    <xsl:value-of select="referencia"/>
+                                                </span>
+
+                                                <span class="producto_tipo">
+                                                    <xsl:value-of select="@tipo"/>
+                                                </span>
+                                            </div>
+
+                                            <div class="producto_footer">
+
+                                                <div>
+                                                    <p class="producto_precio">
+                                                        <xsl:value-of select="precio"/>
+                                                        <xsl:text> </xsl:text>
+                                                        <xsl:value-of select="precio/@moneda"/>
+                                                    </p>
+
+                                                    <p class="producto_stock">
+                                                        <xsl:value-of select="disponibilidad"/>
+                                                    </p>
+                                                </div>
+
+                                                <a class="producto_boton" href="../producto.html?id={@id}">
+                                                    Ver producto
+                                                </a>
+
+                                            </div>
+
                                         </div>
 
-                                    </div>
-                                </xsl:for-each>
-                            </div>
+                                    </article>
 
-                            <p class="volver_top">
-                                <a class="volver_top_link" href="#inicio_fichas">Volver arriba</a>
-                            </p>
-                        </div>
+                                </xsl:for-each>
+
+                            </div>
+                        </section>
 
                     </main>
 
+                    <!-- Llamamos al footer -->
                     <xsl:call-template name="footer"/>
+                    <!-- Llamamos a la funcion del archivo menu active para que pinte el menu activo -->
+                    <script>
+                        <xsl:text>
+                            document.addEventListener("DOMContentLoaded", function() {
+                                activarMenuActual();
+                                activarSubmenus();
+                            });
+                        </xsl:text>
+                    </script>
 
                 </div>
 

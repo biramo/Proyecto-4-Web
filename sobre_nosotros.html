@@ -4,102 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Llar Online - Producto</title>
+    <link rel="icon" href="img/logos/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/estil.css">
+    <script src="js/menu_active.js" defer></script>
     <script src="js/scripts.js" defer></script>
-    <style>
-    .sobre_nosotros {
-        padding: 1em 2em; /* Separa el contenido de los bordes de la pantalla */
-        max-width: 100em ;
-        margin: 0 auto;    /* Centra todo el bloque en la pantalla */   
-    }
-
-    .titulo_sobre_nosotros{
-        margin-bottom: 1em;
-        text-align: center;
-    }
-    
-    .body_sobre_nosotros{
-        background-color: rgb(229, 241, 234);
-        padding: 2em;       /* Espacio interno para que el texto no toque el fondo verde */
-        border-radius: 1em;
-        margin-bottom: 2em;
-    
-    }
-
-    .img_sobre_nosotros{
-        display: flex;
-        justify-content: center; /* Centra horizontalmente */
-        align-items: center; 
-        width: 100%;       
-        max-width: 60em;
-        margin: 0 auto;    /* Centra el contenedor respecto a la página */
-        height: auto;
-        margin-bottom: 1em;
-    }
-    .txt_sobre_nosotros p{
-        line-height: 1.8;
-        font-family: "Inter",Arial, sans-serif;
-    }
-
-    .timeline_sobre_nosotros{
-        position: relative;
-        padding: 2em 0;
-    }
-
-    .timeline_sobre_nosotros::before {
-        content: '';
-        position: absolute;
-        left: 50%;
-        top: 0;
-        bottom: 0;
-        width: 2px;
-        background-color: #1C7A37;
-        transform: translateX(-50%);
-}
-    .tl {
-        display: flex;
-        width: 45%;
-        background-color: rgb(229, 241, 234);
-        border-radius: 1em;
-        padding: 1.2em;
-        margin: 1em;
-        position: relative;
-        flex-direction: column;
-        gap: 0.5em;
-    }
-/* Tarjetas impares → izquierda */
-.tl:nth-child(odd) {
-    margin-left: 0;
-    margin-right: auto;
-}
-
-/* Tarjetas pares → derecha */
-.tl:nth-child(even) {
-    margin-left: auto;
-    margin-right: 0;
-}
-
-/* Configuramos el conector base */
-.tl::after {
-    content: '';
-    position: absolute;
-    top: 2em;            /* Altura a la que sale la línea desde la tarjeta */
-    width: 11.2%;        /* El ancho necesario para llegar justo a la línea central (50% - 45% + margen) */
-    height: 2px;         /* Grosor de la línea */
-    background-color: #1C7A37; /* El mismo verde de tu línea central */
-}
-
-/* Conector para tarjetas en la IZQUIERDA (impares) */
-.tl:nth-child(odd)::after {
-    right: -11.2%;       /* Sale por la derecha de la tarjeta hacia el centro */
-}
-
-/* Conector para tarjetas en la DERECHA (pares) */
-.tl:nth-child(even)::after {
-    left: -11.2%;        /* Sale por la izquierda de la tarjeta hacia el centro */
-}
-
-    </style>
+    <script src="js/cookies.js"></script>
 </head>
 <body>
 
@@ -109,7 +18,7 @@
     <main class="main">
         <section class="sobre_nosotros">
             <div class="titulo_sobre_nosotros">
-                <h2>
+                <h2 class="presentacion_tit">
                     Llar Online – Elevando la esencia de tu hogar.
                 </h2>
             </div>

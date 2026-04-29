@@ -49,6 +49,12 @@ body {
     color: #222;
 }
 
+section {
+    padding: 2em;
+    max-width: 80%;
+    margin: auto;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -71,8 +77,6 @@ main {
 }
 
 .pag_wrap {
-    /* width: 90%;
-    max-width: 75em;*/
     margin: 0 auto;
 }
 
@@ -88,22 +92,18 @@ main {
 }
 
 .cabecera_wrap {
-    width: 90%;
-    max-width: 75em;
+    width: 70%;
+    max-width: 70em;
     margin: 0 auto;
-
     display: flex;
     align-items: center;
     gap: 1.5em;
-}
-
-.cabecera_logo {
-    flex-shrink: 0;
+    justify-content: center;
 }
 
 .cabecera_logo img {
-    width: 4.8em;
-    height: 4.8em;
+    width: 7em;
+    height: 7em;
     object-fit: contain;
     display: block;
 }
@@ -136,7 +136,7 @@ main {
 @media (max-width: 600px) {
     .cabecera_wrap {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 1em;
     }
 
@@ -165,14 +165,18 @@ main {
     flex-wrap: wrap;
     gap: 0.75em;
     padding: 1em;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
 }
 
 .menu_item {
     display: block;
+    position: relative;
 }
 
 .menu_link {
-	font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 700;
     display: inline-block;
     padding: 0.7em 1em;
@@ -180,11 +184,82 @@ main {
     border: 0.0625em solid #d0d0d0;
     border-radius: 0.3em;
     font-size: 0.95rem;
-    font-weight: 600;
+    text-decoration: none;
+    color: #222;
 }
 
-.menu_link:hover {
-    background-color: #e2e2e2;
+.menu_link:hover,
+.menu_link.active {
+    background-color: #1C7A37;
+    color: #ffffff;
+}
+
+/* Si el elemento padre del submenu es un button */
+button.menu_link {
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+}
+
+/* =========================
+   submenu
+========================= */
+
+.menu_item_sub {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 14em;
+    margin: 0;
+    padding: 0.5em 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 0.0625em solid #d9d9d9;
+    border-radius: 0.3em;
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.08);
+    /*Inicia Oculto el submenu*/
+    display: none;
+    z-index: 1000;
+}
+
+/* En escritorio se abre al pasar el raton */
+.menu_item_sub:hover .submenu {
+    display: block;
+}
+
+/* En movil se abre cuando JavaScript añade esta clase */
+.menu_item_sub.submenu_abierto .submenu {
+    display: block;
+}
+
+.submenu_item {
+    display: block;
+}
+
+.submenu_link {
+    display: block;
+    padding: 0.75em 1em;
+    color: #222;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: "Inter", Arial, sans-serif;
+    white-space: nowrap;
+}
+
+.submenu_link:hover,
+.submenu_link.active {
+    background-color: #1C7A37;
+    color: #ffffff;
+}
+
+/* Cuando una pagina del submenu esta activa, Catalogo tambien queda marcado */
+.menu_item_sub .menu_link.active {
+    background-color: #1C7A37;
+    color: #ffffff;
 }
 
 /* =========================
@@ -196,7 +271,7 @@ main {
 }
 
 .tit_sec_h2 {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.7rem;
     margin-bottom: 0.4em;
@@ -211,26 +286,15 @@ main {
    bloques de contenido
 ========================= */
 
-.inicio,
-.presentacion,
-.blog,
-.contacto,
-.cont_tabla,
-.cont_ficha {
-    background-color: #ffffff;
-    border: 0.0625em solid #d9d9d9;
-    padding: 1.5em;
-    margin-bottom: 1.5em;
-}
-
 .inicio_tit,
 .presentacion_tit,
 .blog_tit,
 .contacto_tit {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.5rem;
     margin-bottom: 0.75em;
+    text-align: center;
 }
 
 .inicio_txt,
@@ -261,14 +325,186 @@ main {
 .menu_cat_link {
     display: inline-block;
     padding: 0.6em 0.9em;
-    background-color: #ffffff;
-    border: 0.0625em solid #d9d9d9;
+    background-color: #222222;
+    color: #ffffff;
+    border: 0.0625em solid #222222;
     border-radius: 0.3em;
     font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .menu_cat_link:hover {
-    background-color: #f0f0f0;
+    background-color: #1C7A37;
+    border-color: #1C7A37;
+    color: #ffffff;
+}
+
+.menu_cat_link:visited {
+    color: #ffffff;
+}
+
+/* =========================
+   Home "Index"
+========================= */
+
+.home_bg {
+    min-height: 34em;
+    background-image: url("../img/home/home_bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.home {
+    min-height: 34em;
+    padding: 0;
+    max-width: none;
+    display: block;
+}
+
+.home_overlay {
+    min-height: 34em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, 0.18);
+}
+
+.home__content {
+    width: 90%;
+    max-width: 48em;
+    padding: 2em;
+    border-radius: 0.6em;
+    background-color: rgba(0, 0, 0, 0.28);
+    color: #ffffff;
+}
+
+.home__tit {
+    font-family: "Lora", serif;
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin-bottom: 0.35em;
+}
+
+.home_txt {
+    font-size: 1.2rem;
+    margin-bottom: 1.2em;
+    color: #f5f5f5;
+}
+
+.home__btn {
+    display: inline-block;
+    padding: 0.8em 1.4em;
+    background-color: #ffffff;
+    color: #222222;
+    border-radius: 0.3em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home__btn:hover {
+    background-color: #1C7A37;
+    color: #ffffff;
+}
+
+/* =========================
+   contacto
+========================= */
+
+.contact_page {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.contact_wrap {
+    display: grid;
+    /*fr es fraccion, para tener la proporcion entre una y la otra*/
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    align-items: stretch;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.contact_img_box {
+    min-height: 34em;
+    background-color: rgb(229, 241, 234);
+}
+
+.contact_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact_form_box {
+    padding: 2em;
+}
+
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact_grupo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+}
+
+.contact_label {
+    font-family: "Inter", Arial, sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: #222222;
+}
+
+.contact_input,
+.contact_textarea {
+    width: 100%;
+    padding: 0.85em;
+    border: 0.0625em solid #d0d0d0;
+    border-radius: 0.35em;
+    background-color: #ffffff;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1rem;
+    color: #222222;
+}
+
+.contact_input:focus,
+.contact_textarea:focus {
+    outline: none;
+    border-color: #1C7A37;
+}
+
+.contact_textarea {
+    min-height: 9em;
+    resize: vertical;
+}
+
+.contact_btn {
+    width: fit-content;
+    padding: 0.85em 1.4em;
+    background-color: #222222;
+    color: #ffffff;
+    border: 0;
+    border-radius: 0.35em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contact_btn:hover {
+    background-color: #1C7A37;
 }
 
 /* =========================
@@ -280,7 +516,7 @@ main {
 }
 
 .bloque_tabla_tit {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 0.8em;
@@ -307,7 +543,7 @@ main {
 }
 
 .tabla_col {
-	font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 700;
 }
 
@@ -320,7 +556,7 @@ main {
 }
 
 .bloque_ficha_tit {
-	font-family: "Lora", serif;
+    font-family: "Lora", serif;
     font-weight: 700;
     font-size: 1.4rem;
     margin-bottom: 0.8em;
@@ -396,6 +632,97 @@ main {
 }
 
 /* =========================
+   blog interior
+========================= */
+
+.blog_content {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.blog_articulo {
+    background-color: #ffffff;
+}
+
+.blog_articulo_header {
+    margin-bottom: 1.5em;
+}
+
+.blog_categoria {
+    display: inline-block;
+    margin-bottom: 0.8em;
+    padding: 0.35em 0.75em;
+    background-color: #1C7A37;
+    color: #ffffff;
+    border-radius: 2em;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.blog_intro {
+    max-width: 48em;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.blog_img_principal {
+    margin-bottom: 2em;
+    border-radius: 0.6em;
+    overflow: hidden;
+    border: 0.0625em solid #e0e0e0;
+}
+
+.blog_img_principal img {
+    width: 100%;
+    max-height: 28em;
+    object-fit: cover;
+}
+
+.blog_texto {
+    max-width: 52em;
+    margin: 0 auto;
+}
+
+.blog_texto p {
+    margin-bottom: 1.2em;
+    color: #444;
+    line-height: 1.8;
+}
+
+.blog_texto h3 {
+    font-family: "Lora", serif;
+    font-size: 1.35rem;
+    margin: 1.6em 0 0.7em;
+    color: #222;
+}
+
+.blog_destacado {
+    margin: 2em 0;
+    padding: 1.5em;
+    background-color: rgb(229, 241, 234);
+    border-left: 0.35em solid #1C7A37;
+    border-radius: 0.4em;
+}
+
+.blog_destacado p {
+    margin: 0;
+    font-weight: 700;
+    color: #222;
+}
+
+.blog_acciones {
+    max-width: 52em;
+    margin: 2em auto 0;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+/* =========================
    formulario
 ========================= */
 
@@ -412,7 +739,7 @@ main {
 }
 
 .form_label {
-	font-family: "Inter", Arial, sans-serif;
+    font-family: "Inter", Arial, sans-serif;
     font-weight: 700;
     font-size: 0.95rem;
 }
@@ -445,6 +772,381 @@ main {
 
 .form_btn:hover {
     background-color: #e2e2e2;
+}
+
+/* =========================
+    Sobre Nosotros
+========================== */
+
+.sobre_nosotros {
+    padding: 1em 2em;
+}
+
+.titulo_sobre_nosotros {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.body_sobre_nosotros {
+    background-color: rgb(229, 241, 234);
+    padding: 2em;
+    /* Espacio interno para que el texto no toque el fondo verde */
+    border-radius: 1em;
+    margin-bottom: 2em;
+
+}
+
+.img_sobre_nosotros {
+    display: flex;
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+    max-width: 60em;
+    margin: 0 auto;
+    /* Centra el contenedor respecto a la página */
+    height: auto;
+    margin-bottom: 1em;
+}
+
+.txt_sobre_nosotros p {
+    line-height: 1.8;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+.timeline_sobre_nosotros {
+    position: relative;
+    padding: 2em 0;
+}
+
+.timeline_sobre_nosotros::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: rgb(150, 200, 170);
+    transform: translateX(-50%);
+}
+
+.tl {
+    display: flex;
+    width: 45%;
+    background-color: rgb(229, 241, 234);
+    border-radius: 1em;
+    padding: 1.5em;
+    margin-bottom: 2em;
+    position: relative;
+    flex-direction: column;
+    gap: 1em;
+}
+
+/* Tarjetas impares izquierda */
+.tl:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Tarjetas pares derecha */
+.tl:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+/* =========================
+   Tienda Online
+========================= */
+
+/* CATALOGO */
+
+.catalogo_titulo {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.4em;
+}
+
+.catalogo_texto {
+    color: #555;
+    font-size: 1rem;
+    max-width: 45em;
+}
+
+.catalogo_resumen {
+    margin-bottom: 1em;
+}
+
+.catalogo_total {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.catalogo_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5em;
+}
+
+.producto_card {
+    background-color: #ffffff;
+    border: 0.0625em solid #e0e0e0;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.producto_card:hover {
+    transform: translateY(-0.25em);
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.08);
+}
+
+.producto_img_wrap {
+    position: relative;
+    background-color: #f7f7f7;
+    border-bottom: 0.0625em solid #e5e5e5;
+}
+
+.producto_img {
+    width: 100%;
+    height: 13em;
+    object-fit: cover;
+    display: block;
+}
+
+.producto_badge {
+    position: absolute;
+    top: 0.8em;
+    left: 0.8em;
+    background-color: #2f7d46;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.35em 0.7em;
+    border-radius: 2em;
+}
+
+.producto_body {
+    padding: 1em;
+}
+
+.producto_categoria {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #2f7d46;
+    margin-bottom: 0.5em;
+}
+
+.producto_nombre {
+    font-family: "Lora", serif;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    margin-bottom: 0.3em;
+    color: #222;
+}
+
+.producto_marca {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0.7em;
+}
+
+.producto_desc {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 1em;
+}
+
+.producto_meta {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 1em;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.producto_tipo {
+    text-transform: capitalize;
+}
+
+.producto_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    border-top: 0.0625em solid #eeeeee;
+    padding-top: 1em;
+}
+
+.producto_precio {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.2em;
+}
+
+.producto_stock {
+    font-size: 0.8rem;
+    color: #2f7d46;
+}
+
+.producto_boton {
+    display: inline-block;
+    background-color: #222;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 0.7em 1em;
+    border-radius: 0.4em;
+    white-space: nowrap;
+}
+
+.producto_boton:hover {
+    background-color: #2f7d46;
+}
+
+a.ficha_boton {
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+    background: #000;
+    display: inline-block;
+    color: #fff;
+}
+
+/* =========================
+   ficha producto individual
+========================= */
+
+.producto_single {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+}
+
+.producto_detalle {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    background-color: #ffffff;
+    border: 0.0625em solid #e0e0e0;
+    border-radius: 0.6em;
+    padding: 2em;
+}
+
+.producto_galeria {
+    min-width: 0;
+}
+
+.producto_img_principal_box {
+    background-color: #f7f7f7;
+    border: 0.0625em solid #e5e5e5;
+    border-radius: 0.6em;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.producto_img_principal {
+    width: 100%;
+    height: 28em;
+    object-fit: cover;
+    display: block;
+}
+
+.producto_miniaturas {
+    display: flex;
+    gap: 0.8em;
+    flex-wrap: wrap;
+}
+
+.producto_miniatura_btn {
+    width: 5em;
+    height: 5em;
+    padding: 0;
+    border: 0.125em solid #d9d9d9;
+    border-radius: 0.4em;
+    overflow: hidden;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.producto_miniatura_btn.active,
+.producto_miniatura_btn:hover {
+    border-color: #1C7A37;
+}
+
+.producto_miniatura_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.producto_info_single {
+    min-width: 0;
+}
+
+.producto_titulo_single {
+    font-family: "Lora", serif;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 0.3em;
+}
+
+.producto_marca_single {
+    color: #777;
+    margin-bottom: 1em;
+}
+
+.producto_desc_single {
+    color: #555;
+    margin-bottom: 1.2em;
+}
+
+.producto_precio_single {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 1em;
+}
+
+.producto_datos_single {
+    border-top: 0.0625em solid #eeeeee;
+    border-bottom: 0.0625em solid #eeeeee;
+    padding: 1em 0;
+    margin-bottom: 1.2em;
+}
+
+.producto_datos_single p {
+    margin-bottom: 0.45em;
+    color: #555;
+}
+
+.producto_datos_single strong {
+    color: #222;
+}
+
+.producto_acciones {
+    margin-top: 1em;
+}
+
+.producto_boton_single {
+    display: inline-block;
+    background-color: #222;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    padding: 0.8em 1.2em;
+    border-radius: 0.4em;
+}
+
+.producto_boton_single:hover {
+    background-color: #1C7A37;
 }
 
 /* =========================
@@ -497,6 +1199,102 @@ main {
 }
 
 /* =========================
+   Flecha Volver al TOP
+========================= */
+
+.volver_top {
+    position: fixed;
+    right: 1.5em;
+    bottom: 1.5em;
+    margin: 0;
+    z-index: 1000;
+}
+
+.volver_top_link {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #222;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 700;
+
+    border-radius: 50%;
+    box-shadow: 0 0.3em 0.9em rgba(0, 0, 0, 0.18);
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.volver_top_link:hover {
+    background-color: #2f7d46;
+    transform: translateY(-0.15em);
+}
+
+/* =========================
+   aviso cookies
+========================= */
+
+.cookies_aviso {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.cookies_box {
+    width: 90%;
+    max-width: 75em;
+    margin: 0 auto;
+    padding: 1.4em;
+    background-color: #222222;
+    color: #ffffff;
+    border-radius: 0.4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5em;
+    box-shadow: 0 0.5em 1.5em rgba(0, 0, 0, 0.25);
+}
+
+.cookies_titulo {
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+}
+
+.cookies_txt p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.cookies_btn {
+    padding: 0.8em 2em;
+    background-color: #ffffff;
+    color: #222222;
+    border: 0.0625em solid #ffffff;
+    border-radius: 0.3em;
+    font-family: "Inter", Arial, sans-serif;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.cookies_btn:hover {
+    background-color: #1C7A37;
+    border-color: #1C7A37;
+    color: #ffffff;
+}
+
+/* =========================
    responsive
 ========================= */
 
@@ -520,18 +1318,27 @@ main {
         padding: 0.7em;
     }
 
-	.ficha_lista {
+    .ficha_lista {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Catalogo */
+    .catalogo_grid {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-	.ficha_lista {
+    .ficha_lista {
         grid-template-columns: 1fr;
     }
 
+    section{
+        max-width: 100%;
+    }
+
     .pag_wrap {
-        width: 94%;
+        width: 99%;
     }
 
     .cabecera {
@@ -559,6 +1366,24 @@ main {
         width: 100%;
     }
 
+    .submenu {
+        position: static;
+        min-width: 100%;
+        box-shadow: none;
+        margin-top: 0.5em;
+        padding: 0;
+    }
+
+    .submenu_link {
+        white-space: normal;
+        border-radius: 0.3em;
+    }
+
+    .menu_boton_sub {
+        width: 100%;
+        text-align: left;
+    }
+
     .ficha_card {
         flex-direction: column;
     }
@@ -581,6 +1406,86 @@ main {
     .footer_logo {
         margin: 0 auto;
     }
+
+    /* Catalogo */
+    .catalogo_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto_img {
+        height: 12em;
+    }
+
+    .producto_detalle {
+        grid-template-columns: 1fr;
+        padding: 1.2em;
+    }
+
+    .producto_img_principal {
+        height: 20em;
+    }
+
+    .producto_titulo_single {
+        font-size: 1.6rem;
+    }
+
+    .cookies_box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cookies_btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .blog_content {
+        width: 94%;
+    }
+
+    .blog_img_principal img {
+        max-height: 20em;
+    }
+
+    .blog_acciones {
+        flex-direction: column;
+    }
+
+    .blog_acciones .producto_boton_single {
+        width: 100%;
+        text-align: center;
+    }
+
+     .home_bg,
+    .home,
+    .home_overlay {
+        min-height: 28em;
+    }
+
+    .home__content {
+        width: 90%;
+        padding: 1.5em;
+    }
+
+    .home__tit {
+        font-size: 2rem;
+    }
+
+    .home_txt {
+        font-size: 1rem;
+    }
+
+     .contact_wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .contact_img_box {
+        min-height: 18em;
+    }
+
+    .contact_form_box {
+        padding: 1.5em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -596,15 +1501,6 @@ main {
         font-size: 1.3rem;
     }
 
-    .inicio,
-    .presentacion,
-    .blog,
-    .contacto,
-    .cont_tabla,
-    .cont_ficha {
-        padding: 1em;
-    }
-
     .tabla_col,
     .tabla_td {
         font-size: 0.85rem;
@@ -613,13 +1509,57 @@ main {
     .ficha_nombre {
         font-size: 1.2rem;
     }
-}
 
-a.ficha_boton {
-    padding: 10px;
-    text-align: center;
-    width: 100%;
-    background: #000;
-    display: inline-block;
-    color: #fff;
+    /* Catalogo */
+    .catalogo_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .producto_footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .producto_boton {
+        width: 100%;
+        text-align: center;
+    }
+
+    .volver_top {
+        right: 1em;
+        bottom: 1em;
+    }
+
+    .volver_top_link {
+        width: 2.6em;
+        height: 2.6em;
+        font-size: 1.2rem;
+    }
+
+    .producto_img_principal {
+        height: 16em;
+    }
+
+    .producto_miniatura_btn {
+        width: 4.2em;
+        height: 4.2em;
+    }
+
+    .producto_boton_single {
+        width: 100%;
+        text-align: center;
+    }
+
+    .home__tit {
+        font-size: 1.6rem;
+    }
+
+    .home__btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact_btn {
+        width: 100%;
+    }
 }
