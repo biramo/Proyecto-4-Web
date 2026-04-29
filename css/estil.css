@@ -797,8 +797,6 @@ button.menu_link {
 }
 
 .img_sobre_nosotros {
-    display: flex;
-    justify-content: center;
     /* Centra horizontalmente */
     align-items: center;
     width: 100%;
@@ -807,6 +805,29 @@ button.menu_link {
     /* Centra el contenedor respecto a la página */
     height: auto;
     margin-bottom: 1em;
+}
+
+.img_timeline{
+    justify-content: center;
+    /* Centra horizontalmente */
+    align-items: center;
+    width: 100%;
+    max-width: 60em;
+    /* Centra el contenedor respecto a la página */
+    height: auto;
+    margin-bottom: 1em;
+    
+}
+
+.img_time:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Tarjetas pares derecha */
+.img_time:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
 }
 
 .txt_sobre_nosotros p {
