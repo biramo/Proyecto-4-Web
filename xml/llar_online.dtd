@@ -38,9 +38,10 @@
 
 <!ELEMENT caracteristica (#PCDATA)>
 <!ATTLIST caracteristica
-    nombre (material|color|alto|largo|ancho|categoria) #REQUIRED
+    nombre (material|color|alto|largo|ancho|categoria|forma|tipodecama|reposabrazos) #REQUIRED
     unidad CDATA #IMPLIED
 >
+
 
 <!ELEMENT precio (#PCDATA)>
 <!ATTLIST precio

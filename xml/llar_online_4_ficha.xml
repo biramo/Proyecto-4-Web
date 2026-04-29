@@ -20,6 +20,7 @@
 		        <caracteristica nombre="largo" unidad="cm">200</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">160</caracteristica>
 		        <caracteristica nombre="categoria">Descanso</caracteristica>
+				<caracteristica nombre="tipodecama">Matrimonial</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">499.99</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -64,6 +65,7 @@
 		        <caracteristica nombre="largo" unidad="cm">40</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">45</caracteristica>
 		        <caracteristica nombre="categoria">Descanso</caracteristica>
+				<caracteristica nombre="forma">Rectangular</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">79.90</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -86,6 +88,7 @@
 		        <caracteristica nombre="largo" unidad="cm">190</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">68</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="reposabrazos">No</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">159.00</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -108,6 +111,7 @@
 		        <caracteristica nombre="largo" unidad="cm">58</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">56</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="reposabrazos">No</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">69.50</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -130,6 +134,7 @@
 		        <caracteristica nombre="largo" unidad="cm">150</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">90</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="forma">Rectangular</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">229.00</precio>
 		    <disponibilidad>Pocas unidades</disponibilidad>
@@ -152,6 +157,7 @@
 		        <caracteristica nombre="largo" unidad="cm">180</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">95</caracteristica>
 		        <caracteristica nombre="categoria">Comedor</caracteristica>
+				<caracteristica nombre="forma">Rectangular</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">339.90</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -174,6 +180,7 @@
 		        <caracteristica nombre="largo" unidad="cm">52</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">49</caracteristica>
 		        <caracteristica nombre="categoria">Comedor</caracteristica>
+				<caracteristica nombre="reposabrazos">No</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">94.95</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -306,6 +313,7 @@
 		        <caracteristica nombre="largo" unidad="cm">95</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">210</caracteristica>
 		        <caracteristica nombre="categoria">Descanso</caracteristica>
+				<caracteristica nombre="reposabrazos">Si</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">599.00</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -328,6 +336,7 @@
 		        <caracteristica nombre="largo" unidad="cm">78</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">74</caracteristica>
 		        <caracteristica nombre="categoria">Descanso</caracteristica>
+				<caracteristica nombre="reposabrazos">Si</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">249.99</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -350,6 +359,7 @@
 		        <caracteristica nombre="largo" unidad="cm">200</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">100</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="tipodecama">Individual</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">99.95</precio>
 		    <disponibilidad>Pocas unidades</disponibilidad>
@@ -372,6 +382,7 @@
 		        <caracteristica nombre="largo" unidad="cm">65</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">140</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="reposabrazos">Si</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">189.00</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -482,6 +493,7 @@
 		        <caracteristica nombre="largo" unidad="cm">42</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">110</caracteristica>
 		        <caracteristica nombre="categoria">Descanso</caracteristica>
+				<caracteristica nombre="reposabrazos">No</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">139.95</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -570,6 +582,7 @@
 		        <caracteristica nombre="largo" unidad="cm">160</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">90</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="forma">Rectangular</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">259.99</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -614,6 +627,7 @@
 		        <caracteristica nombre="largo" unidad="cm">72</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">76</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="reposabrazos">Si</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">179.00</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -658,6 +672,7 @@
 		        <caracteristica nombre="largo" unidad="cm">38</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">160</caracteristica>
 		        <caracteristica nombre="categoria">Comedor</caracteristica>
+				<caracteristica nombre="reposabrazos">No</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">154.90</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -680,6 +695,7 @@
 		        <caracteristica nombre="largo" unidad="cm">60</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">110</caracteristica>
 		        <caracteristica nombre="categoria">Descanso</caracteristica>
+				<caracteristica nombre="forma">Rectangular</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">159.95</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -790,6 +806,8 @@
 		        <caracteristica nombre="largo" unidad="cm">180</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">100</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="reposabrazos">Si</caracteristica>
+				<caracteristica nombre="forma">Rectangular</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">649.00</precio>
 		    <disponibilidad>Pocas unidades</disponibilidad>
@@ -812,6 +830,7 @@
 		        <caracteristica nombre="largo" unidad="cm">70</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">70</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="forma">Cuadrada</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">79.90</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -834,6 +853,7 @@
 		        <caracteristica nombre="largo" unidad="cm">48</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">44</caracteristica>
 		        <caracteristica nombre="categoria">Exterior</caracteristica>
+				<caracteristica nombre="reposabrazos">No</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">49.95</precio>
 		    <disponibilidad>Disponible</disponibilidad>
@@ -878,6 +898,7 @@
 		        <caracteristica nombre="largo" unidad="cm">120</caracteristica>
 		        <caracteristica nombre="ancho" unidad="cm">120</caracteristica>
 		        <caracteristica nombre="categoria">Comedor</caracteristica>
+				<caracteristica nombre="forma">Redonda</caracteristica>
 			</caracteristicas>
 		    <precio moneda="EUR">319.95</precio>
 		    <disponibilidad>Disponible</disponibilidad>
