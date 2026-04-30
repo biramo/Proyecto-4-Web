@@ -100,6 +100,47 @@
                                                 </span>
                                             </div>
 
+                                            <!--
+                                                Caracteristicas especiales.
+                                                No todos los productos tienen estas caracteristicas,
+                                                por eso comprobamos cada una con xsl:if.
+                                            -->
+                                            <div class="producto_extra">
+
+                                                <!-- Mostramos la forma directamente -->
+                                                <xsl:if test="caracteristicas/caracteristica[@nombre='forma']">
+                                                    <span class="producto_extra_item">
+                                                        <xsl:value-of select="caracteristicas/caracteristica[@nombre='forma']"/>
+                                                    </span>
+                                                </xsl:if>
+
+                                                <!-- Mostramos el tipo de cama solo si existe -->
+                                                <xsl:if test="caracteristicas/caracteristica[@nombre='tipodecama']">
+                                                    <span class="producto_extra_item">
+                                                        <xsl:text>Cama </xsl:text>
+                                                        <xsl:value-of select="caracteristicas/caracteristica[@nombre='tipodecama']"/>
+                                                    </span>
+                                                </xsl:if>
+
+                                                <!--
+                                                    Reposabrazos:
+                                                    Si el valor es "Si", mostramos "Con reposabrazos".
+                                                    Si el valor es "No", mostramos "Sin reposabrazos".
+                                                -->
+                                                <xsl:if test="caracteristicas/caracteristica[@nombre='reposabrazos']='Si'">
+                                                    <span class="producto_extra_item">
+                                                        Con reposabrazos
+                                                    </span>
+                                                </xsl:if>
+
+                                                <xsl:if test="caracteristicas/caracteristica[@nombre='reposabrazos']='No'">
+                                                    <span class="producto_extra_item">
+                                                        Sin reposabrazos
+                                                    </span>
+                                                </xsl:if>
+
+                                            </div>
+
                                             <div class="producto_footer">
 
                                                 <div>

@@ -2,7 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
     <xsl:template name="cabecera">
-        <header class="cabecera">
+        <header id="cabecera" class="cabecera">
             <div class="cabecera_wrap">
 
                 <div class="cabecera_logo">
@@ -78,7 +78,7 @@
 
    <xsl:template name="footer">
         <p class="volver_top">
-            <a class="volver_top_link" href="#inicio_catalogo">&#8593;</a>
+            <a class="volver_top_link" href="#cabecera">&#8593;</a>
         </p>
         <footer class="footer">
             <div class="footer_wrap footer_grid">

@@ -1010,6 +1010,23 @@ button.menu_link {
     color: #777;
 }
 
+.producto_extra {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin-bottom: 1em;
+}
+
+.producto_extra_item {
+    display: inline-block;
+    padding: 0.35em 0.7em;
+    background-color: rgb(229, 241, 234);
+    color: #1C7A37;
+    border-radius: 2em;
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
 .producto_tipo {
     text-transform: capitalize;
 }
